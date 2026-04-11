@@ -871,3 +871,112 @@
 .related-card-arrow svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 2.5; }
 
 
+/* ============================================================
+   APPROACH SECTION — Наш подход
+   ============================================================ */
+.approach-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-top: 48px;
+}
+@media (max-width: 900px) { .approach-grid { grid-template-columns: 1fr 1fr; gap: 24px; } }
+@media (max-width: 580px) { .approach-grid { grid-template-columns: 1fr; gap: 20px; } }
+
+.approach-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius);
+    padding: 36px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    transition: transform 0.35s ease, border-color 0.3s, box-shadow 0.35s ease;
+}
+.approach-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(170,204,0,0.3);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+
+.approach-icon {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 20px;
+    display: block;
+}
+.approach-icon svg { width: 100%; height: 100%; }
+
+.approach-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.approach-text {
+    color: var(--text-muted);
+    line-height: 1.7;
+    font-size: 0.92rem;
+}
+
+/* ============================================================
+   FAQ SECTION — Часто задаваемые вопросы
+   ============================================================ */
+.faq-list {
+    max-width: 860px;
+    margin: 48px auto 0;
+}
+
+.faq-item {
+    background: var(--bg-card);
+    border: 1px solid var(--border-light);
+    border-radius: 14px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    transition: border-color 0.25s;
+}
+.faq-item:hover { border-color: rgba(255,255,255,0.15); }
+
+.faq-question {
+    padding: 24px 28px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+    transition: color 0.25s;
+    gap: 16px;
+}
+.faq-question::after {
+    content: "+";
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--lime);
+    flex-shrink: 0;
+    line-height: 1;
+    transition: transform 0.35s ease, content 0s;
+}
+
+.faq-item--open .faq-question {
+    color: var(--lime);
+}
+.faq-item--open .faq-question::after {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    padding: 0 28px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding-bottom 0.4s ease;
+    color: var(--text-muted);
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+.faq-item--open .faq-answer {
+    max-height: 400px;
+    padding-bottom: 24px;
+}
