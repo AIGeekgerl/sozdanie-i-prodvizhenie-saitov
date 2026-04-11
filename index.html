@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создание и продвижение сайтов | Технологии для бизнеса</title>
+    <meta name="description" content="Технологии для бизнеса — разработка и продвижение сайтов. Придут клиенты, позади будут конкуренты.">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ====== PRELOADER ====== -->
+<div class="preloader" id="preloader">
+    <div class="preloader-inner">
+        <div class="preloader-logo">Технологии<br><em>для бизнеса</em></div>
+        <div class="preloader-tagline">Придут клиенты — позади будут конкуренты</div>
+        <div class="preloader-bar"><div class="preloader-bar-fill"></div></div>
+    </div>
+</div>
+
+<!-- ====== HEADER ====== -->
+<header class="header" id="header">
+
+    <!-- Мобильная кнопка -->
+    <button class="header-menu-btn js-menu-open" aria-label="Меню">
+        <span class="header-menu-btn-icon"><span></span><span></span><span></span></span>
+        <span>Меню</span>
+    </button>
+
+    <a href="index.html" class="header-logo">
+        <span class="logo-main">Технологии </span><span class="logo-accent">для бизнеса</span>
+    </a>
+
+    <!-- Десктопная навигация -->
+    <nav class="header-nav">
+        <div class="header-nav-item">
+            <a href="index.html" class="header-nav-link">Главная</a>
+        </div>
+        <div class="header-nav-item">
+            <span class="header-nav-link">
+                Услуги
+                <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+            </span>
+            <div class="nav-dropdown">
+                <a href="pages/services.html#design">Проектирование сайтов</a>
+                <a href="pages/services.html#development">Создание веб-проектов</a>
+                <a href="pages/services.html#seo">SEO-продвижение</a>
+                <a href="pages/services.html#support">Техническая поддержка</a>
+            </div>
+        </div>
+        <div class="header-nav-item">
+            <a href="pages/portfolio.html" class="header-nav-link">Кейсы</a>
+        </div>
+        <div class="header-nav-item">
+            <a href="pages/about.html" class="header-nav-link">О компании</a>
+        </div>
+        <div class="header-nav-item">
+            <a href="pages/blog.html" class="header-nav-link">Блог</a>
+        </div>
+        <div class="header-nav-item">
+            <a href="pages/contacts.html" class="header-nav-link">Контакты</a>
+        </div>
+    </nav>
+
+    <div class="header-spacer"></div>
+    <a href="tel:+74951234567" class="header-phone">+7 (495) 123-45-67</a>
+    <a href="#" class="btn btn-gradient js-callback-open" style="margin-left:16px;">Задать вопрос</a>
+</header>
+
+<!-- ====== HERO ====== -->
+<section class="hero" id="hero">
+    <video src="images/hero.mp4" loop autoplay muted playsinline class="hero-video"></video>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-orb hero-orb-3"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+        <h1 class="hero-title">
+            Сайты для бизнеса,<br>который хочет <em>быть первым</em>
+        </h1>
+        <p class="hero-tagline">Придут клиенты — позади будут конкуренты</p>
+        <div class="hero-cta">
+            <a href="#" class="btn btn-lime btn-wide js-callback-open">
+                Приведём клиентов в ваш бизнес — обсудим проект
+            </a>
+        </div>
+    </div>
+
+    <a href="#section-cases" class="hero-scroll">
+        <div class="hero-scroll-arrow"></div>
+        <span>Листайте вниз</span>
+    </a>
+</section>
+
+<!-- ====== PORTFOLIO — 3×3 без текста ====== -->
+<section class="section" id="section-cases">
+    <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+            <h2 class="title">Наши кейсы</h2>
+            <p class="brief">
+                Более 80 проектов за 7 лет работы. Каждый кейс — уникальная история клиента
+                и нашей команды, где результат важнее обещаний.
+            </p>
+        </div>
+
+        <div class="portfolio-grid">
+            <a href="pages/portfolio/case-1.html" class="portfolio-item"
+               data-aos="zoom-fly-left" data-aos-duration="700" data-aos-delay="0">
+                <img src="images/portfolio/case-1.jpg" alt="Кейс 1">
+            </a>
+            <a href="pages/portfolio/case-2.html" class="portfolio-item"
+               data-aos="zoom-fly-up" data-aos-duration="700" data-aos-delay="100">
+                <img src="images/portfolio/case-2.jpg" alt="Кейс 2">
+            </a>
+            <a href="https://psyholoq.ru/" class="portfolio-item" target="_blank" rel="noopener"
+               data-aos="zoom-fly-right" data-aos-duration="700" data-aos-delay="200">
+                <img src="images/portfolio/case-3.jpg" alt="Psyholoq">
+            </a>
+
+            <a href="https://pomosh-ryadom.ru/" class="portfolio-item" target="_blank" rel="noopener"
+               data-aos="zoom-fly-left" data-aos-duration="700" data-aos-delay="0">
+                <img src="images/portfolio/case-4.jpg" alt="Помощь рядом">
+            </a>
+            <a href="https://aigeekgerl.github.io/marimo-site/" class="portfolio-item" target="_blank" rel="noopener"
+               data-aos="zoom-fly-up" data-aos-duration="700" data-aos-delay="100">
+                <img src="images/portfolio/case-5.jpg" alt="Marimo">
+            </a>
+            <a href="https://aigeekgerl.github.io/-/" class="portfolio-item" target="_blank" rel="noopener"
+               data-aos="zoom-fly-right" data-aos-duration="700" data-aos-delay="200">
+                <img src="images/portfolio/case-6.jpg" alt="Веб-проект">
+            </a>
+
+            <a href="https://modaperbambini.group/" class="portfolio-item" target="_blank" rel="noopener"
+               data-aos="zoom-fly-left" data-aos-duration="700" data-aos-delay="0">
+                <img src="images/portfolio/case-7.jpg" alt="Moda Per Bambini">
+            </a>
+            <a href="pages/portfolio/case-8.html" class="portfolio-item"
+               data-aos="zoom-fly-up" data-aos-duration="700" data-aos-delay="100">
+                <img src="images/portfolio/case-8.jpg" alt="Вкус Перекус">
+            </a>
+            <a href="https://aigeekgerl.github.io/-AETHER-JETS/" class="portfolio-item" target="_blank" rel="noopener"
+               data-aos="zoom-fly-right" data-aos-duration="700" data-aos-delay="200">
+                <img src="images/portfolio/case-9.jpg" alt="AETHER JETS">
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ====== SERVICES — 4 в ряд, текст снизу ====== -->
+<section class="section section-alt" id="section-services">
+    <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+            <h2 class="title">Наши услуги</h2>
+            <p class="brief">
+                Проектируем, создаём и продвигаем онлайн-площадки для роста вашего бизнеса.
+                Полный цикл работ — от идеи до стабильного потока клиентов.
+            </p>
+        </div>
+        <div class="services-row">
+            <div class="service-item" data-aos="zoom-fly-up" data-aos-duration="700" data-aos-delay="0">
+                <a href="pages/services.html#design" class="service-item-img">
+                    <img src="images/services/design.jpg" alt="Проектирование">
+                </a>
+                <div class="service-item-body">
+                    <div class="service-item-title">Проектирование сайтов и мобильных приложений</div>
+                    <div class="service-item-brief">От прототипа до финального дизайна — быстро и чётко</div>
+                    <a href="pages/services.html#design" class="service-item-link">Подробнее
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="service-item" data-aos="zoom-fly-up" data-aos-duration="700" data-aos-delay="100">
+                <a href="pages/services.html#development" class="service-item-img">
+                    <img src="images/services/development.jpg" alt="Создание сайтов">
+                </a>
+                <div class="service-item-body">
+                    <div class="service-item-title">Создание индивидуальных веб-проектов</div>
+                    <div class="service-item-brief">Нестандартные решения и стартапы без шаблонов</div>
+                    <a href="pages/services.html#development" class="service-item-link">Подробнее
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="service-item" data-aos="zoom-fly-up" data-aos-duration="700" data-aos-delay="200">
+                <a href="pages/services.html#seo" class="service-item-img">
+                    <img src="images/services/seo.jpg" alt="SEO">
+                </a>
+                <div class="service-item-body">
+                    <div class="service-item-title">SEO-продвижение сайтов</div>
+                    <div class="service-item-brief">Выводим в ТОП Яндекса и Google по целевым запросам</div>
+                    <a href="pages/services.html#seo" class="service-item-link">Подробнее
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="service-item" data-aos="zoom-fly-up" data-aos-duration="700" data-aos-delay="300">
+                <a href="pages/services.html#support" class="service-item-img">
+                    <img src="images/services/support.jpg" alt="Техподдержка">
+                </a>
+                <div class="service-item-body">
+                    <div class="service-item-title">Техническая поддержка и доработка сайтов</div>
+                    <div class="service-item-brief">Решаем все вопросы и развиваем ваш сайт без простоев</div>
+                    <a href="pages/services.html#support" class="service-item-link">Подробнее
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ====== CLIENTS ====== -->
+<section class="section" id="section-clients">
+    <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+            <h2 class="title">Наши клиенты</h2>
+            <p class="brief">Главный принцип нашей работы: клиент должен быть доволен и рекомендовать нас другим.</p>
+        </div>
+    </div>
+    <div class="clients-track-wrap" data-aos="fade-up">
+        <div class="clients-track">
+            <div class="client-logo">Psyholoq</div>
+            <div class="client-logo">Помощь рядом</div>
+            <div class="client-logo">Marimo</div>
+            <div class="client-logo">Moda Per Bambini</div>
+            <div class="client-logo">AETHER JETS</div>
+            <div class="client-logo">Вкус Перекус</div>
+            <div class="client-logo">WebStudio</div>
+            <div class="client-logo">СтройГрупп</div>
+            <div class="client-logo">АвтоКомфорт</div>
+            <div class="client-logo">МедиаПро</div>
+        </div>
+    </div>
+</section>
+
+<!-- ====== BENEFITS — динамичные ====== -->
+<section class="section section-alt" id="section-benefits">
+    <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+            <h2 class="title" style="max-width:780px;">
+                Продуманные сайты, которые укрепят бренд и переманят клиентов у конкурентов.
+            </h2>
+        </div>
+        <div class="benefits-grid">
+            <div class="benefit-card" data-aos="zoom-fly-left" data-aos-duration="700" data-aos-delay="0">
+                <img src="images/benefits/time.jpg" alt="Ценим ваше время" class="benefit-card-img">
+                <div class="benefit-card-body">
+                    <div class="benefit-card-title">Ценим ваше время</div>
+                    <p class="benefit-card-text">Изучим вашу нишу и предложим решения, которые позволят привлекать клиентов быстрее и эффективнее конкурентов.</p>
+                </div>
+            </div>
+            <div class="benefit-card" data-aos="zoom-fly-up" data-aos-duration="700" data-aos-delay="100">
+                <img src="images/benefits/economy.jpg" alt="Рациональная экономия" class="benefit-card-img">
+                <div class="benefit-card-body">
+                    <div class="benefit-card-title">Рациональная экономия</div>
+                    <p class="benefit-card-text">Можно сэкономить на фрилансере — но не на результате. С нами не придётся переделывать дважды.</p>
+                </div>
+            </div>
+            <div class="benefit-card" data-aos="zoom-fly-right" data-aos-duration="700" data-aos-delay="200">
+                <img src="images/benefits/response.jpg" alt="Оперативная поддержка" class="benefit-card-img">
+                <div class="benefit-card-body">
+                    <div class="benefit-card-title">Оперативная поддержка</div>
+                    <p class="benefit-card-text">Переведём язык бизнеса на язык программистов и наоборот. Вы всегда получите быстрый и понятный ответ.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ====== CTA — широкая жёлтая кнопка по центру ====== -->
+<section class="section cta-section" id="section-cta" data-aos="fade-up">
+    <div class="container">
+        <div class="cta-inner">
+            <h2 class="title">Готовы обсудить ваш проект?</h2>
+            <p class="brief">Расскажите о задаче — предложим решение, которое работает.<br>Первая консультация бесплатно.</p>
+            <div class="cta-actions">
+                <a href="#" class="btn btn-lime btn-wide js-callback-open">
+                    Обсудим ваш проект бесплатно
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ====== FOOTER ====== -->
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <div class="footer-brand-logo">
+                    Технологии <span class="logo-accent">для бизнеса</span>
+                </div>
+                <p class="footer-brand-desc">Интернет-агентство — создаём сайты и продвигаем бизнес с 2017 года. Москва и все регионы России.</p>
+                <a href="tel:+74951234567" class="footer-phone">+7 (495) 123-45-67</a>
+                <a href="mailto:info@technobiz.ru" class="footer-email">info@technobiz.ru</a>
+            </div>
+            <div>
+                <div class="footer-col-title">Услуги</div>
+                <div class="footer-links">
+                    <a href="pages/services.html#design">Проектирование</a>
+                    <a href="pages/services.html#development">Создание сайтов</a>
+                    <a href="pages/services.html#seo">SEO-продвижение</a>
+                    <a href="pages/services.html#support">Техподдержка</a>
+                </div>
+            </div>
+            <div>
+                <div class="footer-col-title">Компания</div>
+                <div class="footer-links">
+                    <a href="pages/about.html">О нас</a>
+                    <a href="pages/portfolio.html">Кейсы</a>
+                    <a href="pages/blog.html">Блог</a>
+                    <a href="pages/contacts.html">Контакты</a>
+                </div>
+            </div>
+            <div>
+                <div class="footer-col-title">Адрес</div>
+                <div class="footer-links">
+                    <span style="color:rgba(255,255,255,0.4);font-size:.87rem;line-height:1.85;">г. Москва,<br>ул. Тверская, д. 15, офис 301</span>
+                    <a href="pages/contacts.html" style="margin-top:10px;color:var(--lime);font-size:.85rem;font-weight:600;">Как нас найти →</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-copy">© 2017–2026, «Технологии для бизнеса»</div>
+            <div class="footer-social">
+                <a href="#" aria-label="ВКонтакте">ВК</a>
+                <a href="#" aria-label="Telegram">TG</a>
+                <a href="#" aria-label="YouTube">YT</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- ====== SCROLL UP ====== -->
+<a href="#" class="scroll-up" id="scrollUp" aria-label="Наверх">
+    <div class="scroll-up-btn">
+        <svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </div>
+    <span class="scroll-up-label">Наверх</span>
+</a>
+
+<!-- ====== MODAL: CALLBACK ====== -->
+<div class="modal-overlay" id="callbackModal">
+    <div class="modal">
+        <button class="modal-close js-callback-close">✕</button>
+        <h2 class="modal-title">Задать вопрос</h2>
+        <p class="modal-subtitle">Напишите вопрос по нашей услуге или вашей задаче — свяжемся в течение 30 минут.</p>
+        <form id="callbackForm">
+            <div class="form-group"><input type="text" class="form-input" name="name" placeholder="Имя" required></div>
+            <div class="form-group"><input type="tel" class="form-input" name="phone" placeholder="Телефон" required></div>
+            <div class="form-group"><input type="email" class="form-input" name="email" placeholder="E-mail"></div>
+            <div class="form-group"><textarea class="form-input" name="message" placeholder="Сообщение" rows="4"></textarea></div>
+            <p class="form-note">* Отправляя форму, вы соглашаетесь на обработку <a href="#">персональных данных</a></p>
+            <button type="submit" class="btn btn-gradient" style="width:100%;justify-content:center;padding:18px;">Отправить</button>
+        </form>
+    </div>
+</div>
+
+<!-- ====== MODAL: MENU (мобильный) ====== -->
+<div class="modal-menu-overlay" id="menuModal">
+    <button class="menu-close js-menu-close">✕ Закрыть</button>
+    <div class="menu-logo">Технологии <em>для бизнеса</em></div>
+    <nav class="nav-links">
+        <a href="index.html" class="nav-link active">Главная</a>
+        <a href="pages/services.html" class="nav-link">Услуги и цены</a>
+        <a href="pages/portfolio.html" class="nav-link">Кейсы</a>
+        <a href="pages/about.html" class="nav-link">О компании</a>
+        <a href="pages/blog.html" class="nav-link">Блог</a>
+        <a href="pages/contacts.html" class="nav-link">Контакты</a>
+    </nav>
+    <div class="menu-footer">
+        <div class="menu-contact">
+            <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+            <a href="mailto:info@technobiz.ru">info@technobiz.ru</a>
+        </div>
+        <div class="footer-social">
+            <a href="#" aria-label="ВКонтакте">ВК</a>
+            <a href="#" aria-label="Telegram">TG</a>
+        </div>
+    </div>
+</div>
+
+<!-- ====== COOKIE ====== -->
+<div class="cookie-notice hidden" id="cookieNotice">
+    <p class="cookie-text">Используя сайт, вы соглашаетесь на обработку персональных данных в соответствии с <a href="#">Политикой конфиденциальности</a>.</p>
+    <button class="btn btn-lime cookie-btn" style="width:100%;justify-content:center;">Хорошо</button>
+</div>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
