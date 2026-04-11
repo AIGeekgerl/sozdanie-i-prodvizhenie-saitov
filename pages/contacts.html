@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | Технологии для бизнеса</title>
+    <meta name="description" content="Свяжитесь с агентством «Технологии для бизнеса». Телефон, почта, адрес офиса в Москве. Ответим в течение 30 минут.">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/portfolio.css">
+</head>
+<body>
+
+<!-- ====== HEADER ====== -->
+<header class="header" id="header">
+    <button class="header-menu-btn js-menu-open" aria-label="Меню">
+        <span class="header-menu-btn-icon"><span></span><span></span><span></span></span>
+        <span>Меню</span>
+    </button>
+    <a href="../index.html" class="header-logo">
+        <span class="logo-main">Технологии </span><span class="logo-accent">для бизнеса</span>
+    </a>
+    <nav class="header-nav">
+        <div class="header-nav-item"><a href="../index.html" class="header-nav-link">Главная</a></div>
+        <div class="header-nav-item">
+            <span class="header-nav-link">Услуги <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+            <div class="nav-dropdown">
+                <a href="services.html#design">Проектирование сайтов</a>
+                <a href="services.html#development">Создание веб-проектов</a>
+                <a href="services.html#seo">SEO-продвижение</a>
+                <a href="services.html#support">Техническая поддержка</a>
+            </div>
+        </div>
+        <div class="header-nav-item"><a href="portfolio.html" class="header-nav-link">Кейсы</a></div>
+        <div class="header-nav-item"><a href="about.html" class="header-nav-link">О компании</a></div>
+        <div class="header-nav-item"><a href="blog.html" class="header-nav-link">Блог</a></div>
+        <div class="header-nav-item"><a href="contacts.html" class="header-nav-link active">Контакты</a></div>
+    </nav>
+    <div class="header-spacer"></div>
+    <a href="tel:+74951234567" class="header-phone">+7 (495) 123-45-67</a>
+    <a href="#" class="btn btn-gradient js-callback-open" style="margin-left:16px;">Задать вопрос</a>
+</header>
+
+<!-- ====== HERO ====== -->
+<section class="inner-hero">
+    <div class="inner-hero-orb inner-hero-orb-1"></div>
+    <div class="inner-hero-orb inner-hero-orb-2"></div>
+    <div class="inner-hero-orb inner-hero-orb-violet"></div>
+
+    <!-- Декоративное фото справа (заменить на реальное) -->
+    <div class="inner-hero-img">
+        <img src="../images/contacts/hero.jpg" alt="" aria-hidden="true"
+             onerror="this.parentElement.style.display='none'">
+    </div>
+
+    <div class="container">
+        <div class="breadcrumb" data-aos="fade-up" data-aos-duration="500">
+            <a href="../index.html">Главная</a>
+            <span>/</span>
+            <span>Контакты</span>
+        </div>
+
+        <div class="inner-hero-word js-letter-anim" aria-label="КОНТАКТЫ">КОНТАКТЫ</div>
+
+        <p class="inner-hero-sub">
+            Ответим на любой вопрос в течение 30 минут.<br>
+            Без скриптов и навязчивых продаж — только честный разговор.
+        </p>
+        <div class="inner-hero-actions">
+            <a href="tel:+74951234567" class="btn btn-lime">
+                <svg viewBox="0 0 24 24" style="width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.13 6.13l.97-.97a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.94 16.92z"/></svg>
+                Позвонить
+            </a>
+            <a href="mailto:info@technobiz.ru" class="btn btn-outline-white" style="margin-left:14px;">Написать письмо</a>
+        </div>
+    </div>
+</section>
+
+<!-- ====== КОНТАКТНАЯ ИНФОРМАЦИЯ + ФОРМА ====== -->
+<section class="section" id="contacts">
+    <div class="container">
+        <div class="contacts-layout">
+
+            <!-- Левая колонка: информация -->
+            <div data-aos="fade-right" data-aos-duration="800">
+                <h2 class="contacts-info-title">Как с нами связаться</h2>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.13 6.13l.97-.97a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.94 16.92z"/></svg>
+                    </div>
+                    <div>
+                        <div class="contact-item-label">Телефон</div>
+                        <div class="contact-item-value">
+                            <a href="tel:+74951234567">+7 (495) 123-45-67</a><br>
+                            <span style="font-size:0.82rem;color:rgba(255,255,255,0.35);">Пн–Пт с 9:00 до 19:00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </div>
+                    <div>
+                        <div class="contact-item-label">E-mail</div>
+                        <div class="contact-item-value">
+                            <a href="mailto:info@technobiz.ru">info@technobiz.ru</a><br>
+                            <span style="font-size:0.82rem;color:rgba(255,255,255,0.35);">Отвечаем в течение 30 минут</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <div>
+                        <div class="contact-item-label">Адрес офиса</div>
+                        <div class="contact-item-value">
+                            г. Москва, ул. Тверская, д. 15, офис 301<br>
+                            <span style="font-size:0.82rem;color:rgba(255,255,255,0.35);">ст. м. Тверская / Пушкинская</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    </div>
+                    <div>
+                        <div class="contact-item-label">Мессенджеры</div>
+                        <div class="contact-item-value">
+                            <a href="https://t.me/technobiz" target="_blank">Telegram: @technobiz</a><br>
+                            <a href="https://wa.me/74951234567" target="_blank">WhatsApp: +7 (495) 123-45-67</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contacts-social">
+                    <a href="#" aria-label="ВКонтакте">ВК</a>
+                    <a href="#" aria-label="Telegram">TG</a>
+                    <a href="#" aria-label="YouTube">YT</a>
+                    <a href="#" aria-label="Дзен">Дз</a>
+                </div>
+            </div>
+
+            <!-- Правая колонка: форма -->
+            <div data-aos="zoom-fly-right" data-aos-duration="850" data-aos-delay="80">
+                <div class="contacts-form-card">
+                    <div class="contacts-form-title">Оставить заявку</div>
+                    <div class="contacts-form-sub">Заполните форму — позвоним или напишем в удобное для вас время.</div>
+                    <form id="contactPageForm">
+                        <div class="form-group"><input type="text" class="form-input" name="name" placeholder="Ваше имя" required></div>
+                        <div class="form-group"><input type="tel" class="form-input" name="phone" placeholder="Телефон" required></div>
+                        <div class="form-group"><input type="email" class="form-input" name="email" placeholder="E-mail"></div>
+                        <div class="form-group">
+                            <select class="form-input" name="service" style="appearance:none;cursor:pointer;">
+                                <option value="" disabled selected>Выберите услугу</option>
+                                <option>Создание сайта</option>
+                                <option>SEO-продвижение</option>
+                                <option>Проектирование / дизайн</option>
+                                <option>Техническая поддержка</option>
+                                <option>Другой вопрос</option>
+                            </select>
+                        </div>
+                        <div class="form-group"><textarea class="form-input" name="message" placeholder="Расскажите о задаче" rows="4"></textarea></div>
+                        <p class="form-note">* Нажимая кнопку, вы соглашаетесь на обработку <a href="#">персональных данных</a></p>
+                        <button type="submit" class="btn btn-lime" style="width:100%;justify-content:center;padding:18px;font-size:1.05rem;">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Карта (заглушка) -->
+        <div class="map-placeholder" data-aos="fade-up">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>г. Москва, ул. Тверская, д. 15 — Карта будет здесь</span>
+        </div>
+    </div>
+</section>
+
+<!-- ====== CTA ====== -->
+<section class="section cta-section" data-aos="fade-up">
+    <div class="container">
+        <div class="cta-inner">
+            <h2 class="title">Не знаете, с чего начать?</h2>
+            <p class="brief">Расскажите нам о бизнесе — предложим конкретный план за одну встречу.</p>
+            <div class="cta-actions">
+                <a href="#" class="btn btn-lime btn-wide js-callback-open">Получить бесплатную консультацию</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ====== FOOTER ====== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <div class="footer-brand-logo">Технологии <span class="logo-accent">для бизнеса</span></div>
+                <p class="footer-brand-desc">Интернет-агентство — создаём сайты и продвигаем бизнес с 2017 года. Москва и все регионы России.</p>
+                <a href="tel:+74951234567" class="footer-phone">+7 (495) 123-45-67</a>
+                <a href="mailto:info@technobiz.ru" class="footer-email">info@technobiz.ru</a>
+            </div>
+            <div>
+                <div class="footer-col-title">Услуги</div>
+                <div class="footer-links">
+                    <a href="services.html#design">Проектирование</a>
+                    <a href="services.html#development">Создание сайтов</a>
+                    <a href="services.html#seo">SEO-продвижение</a>
+                    <a href="services.html#support">Техподдержка</a>
+                </div>
+            </div>
+            <div>
+                <div class="footer-col-title">Компания</div>
+                <div class="footer-links">
+                    <a href="about.html">О нас</a>
+                    <a href="portfolio.html">Кейсы</a>
+                    <a href="blog.html">Блог</a>
+                    <a href="contacts.html">Контакты</a>
+                </div>
+            </div>
+            <div>
+                <div class="footer-col-title">Адрес</div>
+                <div class="footer-links">
+                    <span style="color:rgba(255,255,255,0.4);font-size:.87rem;line-height:1.85;">г. Москва,<br>ул. Тверская, д. 15, офис 301</span>
+                    <a href="contacts.html" style="margin-top:10px;color:var(--lime);font-size:.85rem;font-weight:600;">Как нас найти →</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-copy">© 2017–2026, «Технологии для бизнеса»</div>
+            <div class="footer-social">
+                <a href="#" aria-label="ВКонтакте">ВК</a>
+                <a href="#" aria-label="Telegram">TG</a>
+                <a href="#" aria-label="YouTube">YT</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<a href="#" class="scroll-up" id="scrollUp" aria-label="Наверх">
+    <div class="scroll-up-btn"><svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg></div>
+    <span class="scroll-up-label">Наверх</span>
+</a>
+
+<div class="modal-overlay" id="callbackModal">
+    <div class="modal">
+        <button class="modal-close js-callback-close">✕</button>
+        <h2 class="modal-title">Задать вопрос</h2>
+        <p class="modal-subtitle">Напишите вопрос — свяжемся в течение 30 минут.</p>
+        <form id="callbackForm">
+            <div class="form-group"><input type="text" class="form-input" name="name" placeholder="Имя" required></div>
+            <div class="form-group"><input type="tel" class="form-input" name="phone" placeholder="Телефон" required></div>
+            <div class="form-group"><input type="email" class="form-input" name="email" placeholder="E-mail"></div>
+            <div class="form-group"><textarea class="form-input" name="message" placeholder="Сообщение" rows="4"></textarea></div>
+            <p class="form-note">* Отправляя форму, вы соглашаетесь на обработку <a href="#">персональных данных</a></p>
+            <button type="submit" class="btn btn-gradient" style="width:100%;justify-content:center;padding:18px;">Отправить</button>
+        </form>
+    </div>
+</div>
+
+<div class="modal-menu-overlay" id="menuModal">
+    <button class="menu-close js-menu-close">✕ Закрыть</button>
+    <div class="menu-logo">Технологии <em>для бизнеса</em></div>
+    <nav class="nav-links">
+        <a href="../index.html" class="nav-link">Главная</a>
+        <a href="services.html" class="nav-link">Услуги и цены</a>
+        <a href="portfolio.html" class="nav-link">Кейсы</a>
+        <a href="about.html" class="nav-link">О компании</a>
+        <a href="blog.html" class="nav-link">Блог</a>
+        <a href="contacts.html" class="nav-link active">Контакты</a>
+    </nav>
+    <div class="menu-footer">
+        <div class="menu-contact">
+            <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+            <a href="mailto:info@technobiz.ru">info@technobiz.ru</a>
+        </div>
+        <div class="footer-social">
+            <a href="#" aria-label="ВКонтакте">ВК</a>
+            <a href="#" aria-label="Telegram">TG</a>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="../js/app.js"></script>
+<script src="../js/letter-anim.js"></script>
+<script>
+    // Contacts page form submit
+    const cpForm = document.getElementById('contactPageForm');
+    if (cpForm) {
+        cpForm.addEventListener('submit', e => {
+            e.preventDefault();
+            const btn = cpForm.querySelector('[type="submit"]');
+            btn.textContent = 'Отправляем…'; btn.disabled = true;
+            setTimeout(() => {
+                cpForm.innerHTML = `<div style="text-align:center;padding:48px 0;">
+                    <div style="font-size:3rem;margin-bottom:14px;color:#AACC00;">✓</div>
+                    <h3 style="color:#fff;font-size:1.4rem;margin-bottom:10px;">Заявка отправлена!</h3>
+                    <p style="color:rgba(255,255,255,0.5);">Свяжемся с вами в течение 30 минут.</p>
+                </div>`;
+            }, 1200);
+        });
+    }
+</script>
+</body>
+</html>

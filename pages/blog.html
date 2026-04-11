@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог о создании сайтов | Технологии для бизнеса</title>
+    <meta name="description" content="Статьи о веб-разработке, SEO-продвижении и интернет-маркетинге от команды агентства «Технологии для бизнеса».">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/portfolio.css">
+</head>
+<body>
+
+<!-- ====== HEADER ====== -->
+<header class="header" id="header">
+    <button class="header-menu-btn js-menu-open" aria-label="Меню">
+        <span class="header-menu-btn-icon"><span></span><span></span><span></span></span>
+        <span>Меню</span>
+    </button>
+    <a href="../index.html" class="header-logo">
+        <span class="logo-main">Технологии </span><span class="logo-accent">для бизнеса</span>
+    </a>
+    <nav class="header-nav">
+        <div class="header-nav-item"><a href="../index.html" class="header-nav-link">Главная</a></div>
+        <div class="header-nav-item">
+            <span class="header-nav-link">Услуги <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+            <div class="nav-dropdown">
+                <a href="services.html#design">Проектирование сайтов</a>
+                <a href="services.html#development">Создание веб-проектов</a>
+                <a href="services.html#seo">SEO-продвижение</a>
+                <a href="services.html#support">Техническая поддержка</a>
+            </div>
+        </div>
+        <div class="header-nav-item"><a href="portfolio.html" class="header-nav-link">Кейсы</a></div>
+        <div class="header-nav-item"><a href="about.html" class="header-nav-link">О компании</a></div>
+        <div class="header-nav-item"><a href="blog.html" class="header-nav-link active">Блог</a></div>
+        <div class="header-nav-item"><a href="contacts.html" class="header-nav-link">Контакты</a></div>
+    </nav>
+    <div class="header-spacer"></div>
+    <a href="tel:+74951234567" class="header-phone">+7 (495) 123-45-67</a>
+    <a href="#" class="btn btn-gradient js-callback-open" style="margin-left:16px;">Задать вопрос</a>
+</header>
+
+<!-- ====== HERO ====== -->
+<section class="inner-hero">
+    <div class="inner-hero-orb inner-hero-orb-1"></div>
+    <div class="inner-hero-orb inner-hero-orb-2"></div>
+    <div class="inner-hero-orb inner-hero-orb-violet"></div>
+
+    <!-- Decorative right image (заменить на реальное фото) -->
+    <div class="inner-hero-img">
+        <img src="../images/blog/hero.jpg" alt="" aria-hidden="true"
+             onerror="this.parentElement.style.display='none'">
+    </div>
+
+    <div class="container">
+        <div class="breadcrumb" data-aos="fade-up" data-aos-duration="500">
+            <a href="../index.html">Главная</a>
+            <span>/</span>
+            <span>Блог</span>
+        </div>
+
+        <!-- Animated word -->
+        <div class="inner-hero-word js-letter-anim" aria-label="БЛОГ">БЛОГ</div>
+
+        <p class="inner-hero-sub">
+            О создании сайтов, SEO и интернет-маркетинге.<br>
+            Только полезные материалы — без воды и рекламных текстов.
+        </p>
+        <div class="inner-hero-actions">
+            <a href="#articles" class="btn btn-lime">Читать статьи</a>
+        </div>
+    </div>
+</section>
+
+<!-- ====== ARTICLES ====== -->
+<section class="section" id="articles">
+    <div class="container">
+
+        <!-- Controls: tags + search -->
+        <div class="blog-controls" data-aos="fade-up">
+            <div class="blog-tags">
+                <button class="blog-tag active">#Все статьи</button>
+                <button class="blog-tag">#SEO</button>
+                <button class="blog-tag">#Разработка</button>
+                <button class="blog-tag">#Дизайн</button>
+                <button class="blog-tag">#Маркетинг</button>
+            </div>
+            <label class="blog-search">
+                <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+                <input type="search" placeholder="Поиск по блогу">
+            </label>
+        </div>
+
+        <!-- 4 Cards -->
+        <div class="blog-grid">
+
+            <!-- Card 1 -->
+            <a href="#" class="blog-card" data-aos="zoom-fly-left" data-aos-duration="850" data-aos-delay="0">
+                <div class="blog-card-img">
+                    <!-- Заменить src на реальное изображение, когда пришлёте -->
+                    <div class="blog-card-img-placeholder">
+                        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                    </div>
+                    <span class="blog-card-cat">SEO</span>
+                </div>
+                <div class="blog-card-body">
+                    <div class="blog-card-title">SEO-продвижение без серых схем: как попасть в ТОП честно</div>
+                    <div class="blog-card-excerpt">Разбираем белые методы, которые дают стабильный результат, и объясняем, почему «быстрое SEO» — это ловушка.</div>
+                    <div class="blog-card-meta">
+                        <span>
+                            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                            14 апр 2026
+                        </span>
+                        <span>
+                            <svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                            312
+                        </span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Card 2 -->
+            <a href="#" class="blog-card" data-aos="zoom-fly-right" data-aos-duration="850" data-aos-delay="120">
+                <div class="blog-card-img">
+                    <div class="blog-card-img-placeholder">
+                        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                    </div>
+                    <span class="blog-card-cat">Разработка</span>
+                </div>
+                <div class="blog-card-body">
+                    <div class="blog-card-title">7 вопросов, которые нужно задать веб-разработчику перед заказом</div>
+                    <div class="blog-card-excerpt">Как не попасть на фрилансера-призрака и получить сайт, который продаёт — а не просто «выглядит хорошо».</div>
+                    <div class="blog-card-meta">
+                        <span>
+                            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                            28 мар 2026
+                        </span>
+                        <span>
+                            <svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                            490
+                        </span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Card 3 -->
+            <a href="#" class="blog-card" data-aos="zoom-fly-left" data-aos-duration="850" data-aos-delay="240">
+                <div class="blog-card-img">
+                    <div class="blog-card-img-placeholder">
+                        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                    </div>
+                    <span class="blog-card-cat">Дизайн</span>
+                </div>
+                <div class="blog-card-body">
+                    <div class="blog-card-title">Тренды веб-дизайна 2026: что уже устарело, а что взлетит</div>
+                    <div class="blog-card-excerpt">Glassmorphism уходит, motion-дизайн и 3D-иллюстрации остаются. Разбираем, что стоит внедрять уже сейчас.</div>
+                    <div class="blog-card-meta">
+                        <span>
+                            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                            10 мар 2026
+                        </span>
+                        <span>
+                            <svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                            278
+                        </span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Card 4 -->
+            <a href="#" class="blog-card" data-aos="zoom-fly-right" data-aos-duration="850" data-aos-delay="360">
+                <div class="blog-card-img">
+                    <div class="blog-card-img-placeholder">
+                        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                    </div>
+                    <span class="blog-card-cat">Маркетинг</span>
+                </div>
+                <div class="blog-card-body">
+                    <div class="blog-card-title">Сколько стоит сайт в 2026 году: честный разбор всех статей расходов</div>
+                    <div class="blog-card-excerpt">Почему одни студии берут 30 000 ₽, а другие 500 000 ₽ — и когда каждый вариант оправдан.</div>
+                    <div class="blog-card-meta">
+                        <span>
+                            <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                            2 мар 2026
+                        </span>
+                        <span>
+                            <svg viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                            741
+                        </span>
+                    </div>
+                </div>
+            </a>
+
+        </div><!-- /blog-grid -->
+    </div>
+</section>
+
+<!-- ====== CTA ====== -->
+<section class="section cta-section" data-aos="fade-up">
+    <div class="container">
+        <div class="cta-inner">
+            <h2 class="title">Нужна консультация по вашему проекту?</h2>
+            <p class="brief">Задайте вопрос — ответим честно и по делу. Без скриптов и навязчивых продаж.</p>
+            <div class="cta-actions">
+                <a href="#" class="btn btn-lime btn-wide js-callback-open">Задать вопрос бесплатно</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ====== FOOTER ====== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <div class="footer-brand-logo">Технологии <span class="logo-accent">для бизнеса</span></div>
+                <p class="footer-brand-desc">Интернет-агентство — создаём сайты и продвигаем бизнес с 2017 года. Москва и все регионы России.</p>
+                <a href="tel:+74951234567" class="footer-phone">+7 (495) 123-45-67</a>
+                <a href="mailto:info@technobiz.ru" class="footer-email">info@technobiz.ru</a>
+            </div>
+            <div>
+                <div class="footer-col-title">Услуги</div>
+                <div class="footer-links">
+                    <a href="services.html#design">Проектирование</a>
+                    <a href="services.html#development">Создание сайтов</a>
+                    <a href="services.html#seo">SEO-продвижение</a>
+                    <a href="services.html#support">Техподдержка</a>
+                </div>
+            </div>
+            <div>
+                <div class="footer-col-title">Компания</div>
+                <div class="footer-links">
+                    <a href="about.html">О нас</a>
+                    <a href="portfolio.html">Кейсы</a>
+                    <a href="blog.html">Блог</a>
+                    <a href="contacts.html">Контакты</a>
+                </div>
+            </div>
+            <div>
+                <div class="footer-col-title">Адрес</div>
+                <div class="footer-links">
+                    <span style="color:rgba(255,255,255,0.4);font-size:.87rem;line-height:1.85;">г. Москва,<br>ул. Тверская, д. 15, офис 301</span>
+                    <a href="contacts.html" style="margin-top:10px;color:var(--lime);font-size:.85rem;font-weight:600;">Как нас найти →</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-copy">© 2017–2026, «Технологии для бизнеса»</div>
+            <div class="footer-social">
+                <a href="#" aria-label="ВКонтакте">ВК</a>
+                <a href="#" aria-label="Telegram">TG</a>
+                <a href="#" aria-label="YouTube">YT</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<a href="#" class="scroll-up" id="scrollUp" aria-label="Наверх">
+    <div class="scroll-up-btn"><svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg></div>
+    <span class="scroll-up-label">Наверх</span>
+</a>
+
+<!-- MODAL CALLBACK -->
+<div class="modal-overlay" id="callbackModal">
+    <div class="modal">
+        <button class="modal-close js-callback-close">✕</button>
+        <h2 class="modal-title">Задать вопрос</h2>
+        <p class="modal-subtitle">Напишите вопрос — свяжемся в течение 30 минут.</p>
+        <form id="callbackForm">
+            <div class="form-group"><input type="text" class="form-input" name="name" placeholder="Имя" required></div>
+            <div class="form-group"><input type="tel" class="form-input" name="phone" placeholder="Телефон" required></div>
+            <div class="form-group"><input type="email" class="form-input" name="email" placeholder="E-mail"></div>
+            <div class="form-group"><textarea class="form-input" name="message" placeholder="Сообщение" rows="4"></textarea></div>
+            <p class="form-note">* Отправляя форму, вы соглашаетесь на обработку <a href="#">персональных данных</a></p>
+            <button type="submit" class="btn btn-gradient" style="width:100%;justify-content:center;padding:18px;">Отправить</button>
+        </form>
+    </div>
+</div>
+
+<!-- MODAL MENU -->
+<div class="modal-menu-overlay" id="menuModal">
+    <button class="menu-close js-menu-close">✕ Закрыть</button>
+    <div class="menu-logo">Технологии <em>для бизнеса</em></div>
+    <nav class="nav-links">
+        <a href="../index.html" class="nav-link">Главная</a>
+        <a href="services.html" class="nav-link">Услуги и цены</a>
+        <a href="portfolio.html" class="nav-link">Кейсы</a>
+        <a href="about.html" class="nav-link">О компании</a>
+        <a href="blog.html" class="nav-link active">Блог</a>
+        <a href="contacts.html" class="nav-link">Контакты</a>
+    </nav>
+    <div class="menu-footer">
+        <div class="menu-contact">
+            <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+            <a href="mailto:info@technobiz.ru">info@technobiz.ru</a>
+        </div>
+        <div class="footer-social">
+            <a href="#" aria-label="ВКонтакте">ВК</a>
+            <a href="#" aria-label="Telegram">TG</a>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="../js/app.js"></script>
+<script src="../js/letter-anim.js"></script>
+</body>
+</html>
