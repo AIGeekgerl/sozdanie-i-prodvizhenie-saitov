@@ -1,89 +1,96 @@
-/* =========================================
-   ТехноУспех — Main JavaScript
-   ========================================= */
-
 document.addEventListener('DOMContentLoaded', () => {
 
-    /* ---- Preloader ---- */
-    const preloader = document.querySelector('.preloader');
+    /* ---- Preloader — задержка 2.8s ---- */
+    const preloader = document.getElementById('preloader');
     if (preloader) {
-        window.addEventListener('load', () => {
-            setTimeout(() => preloader.classList.add('hidden'), 400);
+        const hide = () => preloader.classList.add('hidden');
+        // Ждём загрузки + минимум 2.8 секунды для эффекта
+        let loaded = false, minPassed = false;
+        window.addEventListener('load', () => { loaded = true; if (minPassed) hide(); });
+        setTimeout(() => { minPassed = true; if (loaded) hide(); else hide(); }, 2800);
+    }
+
+    /* ---- AOS — драматичные анимации ---- */
+    if (typeof AOS !== 'undefined') {
+        AOS.init({
+            duration: 750,
+            easing: 'cubic-bezier(0.16, 1, 0.3, 1)',
+            once: true,
+            offset: 60,
         });
-        // Fallback: hide after 3s
-        setTimeout(() => preloader && preloader.classList.add('hidden'), 3000);
     }
 
     /* ---- Sticky Header ---- */
     const header = document.querySelector('.header');
     if (header) {
-        const onScroll = () => {
-            header.classList.toggle('scrolled', window.scrollY > 60);
-        };
+        const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 60);
         window.addEventListener('scroll', onScroll, { passive: true });
         onScroll();
     }
 
-    /* ---- Modal System ---- */
-    // Callback modal
-    const callbackOverlay = document.getElementById('callbackModal');
-    const callbackTriggers = document.querySelectorAll('[data-modal="callback"]');
-    const callbackClose = callbackOverlay ? callbackOverlay.querySelector('.modal-close') : null;
-
-    callbackTriggers.forEach(btn => {
+    /* ---- Callback Modal ---- */
+    const callbackModal = document.getElementById('callbackModal');
+    document.querySelectorAll('.js-callback-open').forEach(btn => {
         btn.addEventListener('click', e => {
             e.preventDefault();
-            openModal(callbackOverlay);
+            callbackModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
         });
     });
-    if (callbackClose) callbackClose.addEventListener('click', () => closeModal(callbackOverlay));
-    if (callbackOverlay) {
-        callbackOverlay.addEventListener('click', e => {
-            if (e.target === callbackOverlay) closeModal(callbackOverlay);
+    document.querySelectorAll('.js-callback-close').forEach(btn => {
+        btn.addEventListener('click', () => {
+            callbackModal.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    });
+    if (callbackModal) {
+        callbackModal.addEventListener('click', e => {
+            if (e.target === callbackModal) {
+                callbackModal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
         });
     }
 
-    // Menu modal
-    const menuOverlay = document.getElementById('menuModal');
-    const menuBtn = document.querySelector('.header-menu-btn');
-    const menuCloseBtn = menuOverlay ? menuOverlay.querySelector('.menu-close') : null;
-
-    if (menuBtn) menuBtn.addEventListener('click', () => openModal(menuOverlay));
-    if (menuCloseBtn) menuCloseBtn.addEventListener('click', () => closeModal(menuOverlay));
-    if (menuOverlay) {
-        menuOverlay.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => closeModal(menuOverlay));
+    /* ---- Menu Modal (мобильный) ---- */
+    const menuModal = document.getElementById('menuModal');
+    document.querySelectorAll('.js-menu-open').forEach(btn => {
+        btn.addEventListener('click', () => {
+            menuModal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+    document.querySelectorAll('.js-menu-close').forEach(btn => {
+        btn.addEventListener('click', () => {
+            menuModal.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    });
+    if (menuModal) {
+        menuModal.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                menuModal.classList.remove('active');
+                document.body.style.overflow = '';
+            });
         });
     }
 
-    // Escape key closes any modal
+    /* ---- ESC закрывает модалки ---- */
     document.addEventListener('keydown', e => {
         if (e.key === 'Escape') {
-            closeModal(callbackOverlay);
-            closeModal(menuOverlay);
+            [callbackModal, menuModal].forEach(m => {
+                if (m) m.classList.remove('active');
+            });
+            document.body.style.overflow = '';
         }
     });
 
-    function openModal(overlay) {
-        if (!overlay) return;
-        overlay.classList.add('active');
-        document.body.style.overflow = 'hidden';
-    }
-    function closeModal(overlay) {
-        if (!overlay) return;
-        overlay.classList.remove('active');
-        document.body.style.overflow = '';
-    }
-
-    /* ---- Clients Slider (auto-duplicate for infinite loop) ---- */
+    /* ---- Clients Slider — дублируем для бесконечной прокрутки ---- */
     const track = document.querySelector('.clients-track');
-    if (track) {
-        const items = track.innerHTML;
-        track.innerHTML = items + items; // duplicate for seamless loop
-    }
+    if (track) track.innerHTML += track.innerHTML;
 
     /* ---- Scroll to Top ---- */
-    const scrollUp = document.querySelector('.scroll-up');
+    const scrollUp = document.getElementById('scrollUp');
     if (scrollUp) {
         window.addEventListener('scroll', () => {
             scrollUp.classList.toggle('visible', window.scrollY > 500);
@@ -94,71 +101,43 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    /* ---- AOS Init ---- */
-    if (typeof AOS !== 'undefined') {
-        AOS.init({
-            duration: 700,
-            easing: 'ease-out-cubic',
-            once: true,
-            offset: 80,
-        });
-    }
-
-    /* ---- Hero scroll indicator ---- */
+    /* ---- Hero scroll ---- */
     const heroScroll = document.querySelector('.hero-scroll');
     if (heroScroll) {
         heroScroll.addEventListener('click', e => {
             e.preventDefault();
-            const target = document.querySelector('#section-cases');
-            if (target) target.scrollIntoView({ behavior: 'smooth' });
+            const t = document.getElementById('section-cases');
+            if (t) t.scrollIntoView({ behavior: 'smooth' });
         });
     }
 
-    /* ---- Contact Form ---- */
+    /* ---- Form submit ---- */
     const form = document.getElementById('callbackForm');
     if (form) {
         form.addEventListener('submit', e => {
             e.preventDefault();
             const btn = form.querySelector('[type="submit"]');
-            const orig = btn.textContent;
-            btn.textContent = 'Отправляем...';
+            btn.textContent = 'Отправляем…';
             btn.disabled = true;
-            // Simulate send
             setTimeout(() => {
-                form.innerHTML = `
-                    <div style="text-align:center;padding:40px 0;">
-                        <div style="font-size:3rem;margin-bottom:16px;">✓</div>
-                        <h3 style="color:#fff;margin-bottom:8px;">Заявка отправлена!</h3>
-                        <p style="color:var(--text-muted);">Мы свяжемся с вами в течение 30 минут.</p>
-                    </div>`;
+                form.innerHTML = `<div style="text-align:center;padding:48px 0;">
+                    <div style="font-size:3.5rem;margin-bottom:16px;color:#AACC00;">✓</div>
+                    <h3 style="color:#fff;font-size:1.5rem;margin-bottom:10px;">Заявка отправлена!</h3>
+                    <p style="color:rgba(255,255,255,0.55);">Мы свяжемся с вами в течение 30 минут.</p>
+                </div>`;
             }, 1200);
         });
     }
 
-    /* ---- Cookie Notice ---- */
+    /* ---- Cookie ---- */
     const cookie = document.getElementById('cookieNotice');
     if (cookie) {
         const stored = localStorage.getItem('cookie-accepted');
-        if (!stored || (+stored + 31536000000) < Date.now()) {
-            cookie.classList.remove('hidden');
-        }
-        const cookieBtn = cookie.querySelector('.cookie-btn');
-        if (cookieBtn) {
-            cookieBtn.addEventListener('click', () => {
-                localStorage.setItem('cookie-accepted', Date.now());
-                cookie.classList.add('hidden');
-            });
-        }
+        if (!stored || (+stored + 31536000000) < Date.now()) cookie.classList.remove('hidden');
+        cookie.querySelector('.cookie-btn')?.addEventListener('click', () => {
+            localStorage.setItem('cookie-accepted', Date.now());
+            cookie.classList.add('hidden');
+        });
     }
-
-    /* ---- Active nav link ---- */
-    const currentPath = window.location.pathname;
-    document.querySelectorAll('.nav-link').forEach(link => {
-        const href = link.getAttribute('href');
-        if (href === currentPath || (currentPath === '/' && href === '/index.html') ||
-            (href !== '/' && currentPath.includes(href))) {
-            link.classList.add('active');
-        }
-    });
 
 });
