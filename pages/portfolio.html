@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кейсы — портфолио | Технологии для бизнеса</title>
+    <meta name="description" content="Более 80 выполненных проектов: разработка сайтов, SEO-продвижение, дизайн. Реальные результаты для бизнеса.">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/portfolio.css">
+</head>
+<body>
+
+<!-- ====== HEADER ====== -->
+<header class="header" id="header">
+    <button class="header-menu-btn js-menu-open" aria-label="Меню">
+        <span class="header-menu-btn-icon"><span></span><span></span><span></span></span>
+        <span>Меню</span>
+    </button>
+
+    <a href="../index.html" class="header-logo">
+        <span class="logo-main">Технологии </span><span class="logo-accent">для бизнеса</span>
+    </a>
+
+    <nav class="header-nav">
+        <div class="header-nav-item">
+            <a href="../index.html" class="header-nav-link">Главная</a>
+        </div>
+        <div class="header-nav-item">
+            <span class="header-nav-link">
+                Услуги
+                <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+            </span>
+            <div class="nav-dropdown">
+                <a href="services.html#design">Проектирование сайтов</a>
+                <a href="services.html#development">Создание веб-проектов</a>
+                <a href="services.html#seo">SEO-продвижение</a>
+                <a href="services.html#support">Техническая поддержка</a>
+            </div>
+        </div>
+        <div class="header-nav-item">
+            <a href="portfolio.html" class="header-nav-link active">Кейсы</a>
+        </div>
+        <div class="header-nav-item">
+            <a href="about.html" class="header-nav-link">О компании</a>
+        </div>
+        <div class="header-nav-item">
+            <a href="blog.html" class="header-nav-link">Блог</a>
+        </div>
+        <div class="header-nav-item">
+            <a href="contacts.html" class="header-nav-link">Контакты</a>
+        </div>
+    </nav>
+
+    <div class="header-spacer"></div>
+    <a href="tel:+74951234567" class="header-phone">+7 (495) 123-45-67</a>
+    <a href="#" class="btn btn-gradient js-callback-open" style="margin-left:16px;">Задать вопрос</a>
+</header>
+
+<!-- ====== PAGE HERO ====== -->
+<section class="page-hero">
+    <div class="page-hero-orb page-hero-orb-1"></div>
+    <div class="page-hero-orb page-hero-orb-2"></div>
+    <div class="container">
+        <div class="breadcrumb" data-aos="fade-up" data-aos-duration="600">
+            <a href="../index.html">Главная</a>
+            <span>/</span>
+            <span>Кейсы</span>
+        </div>
+        <h1 class="page-hero-title" data-aos="fade-up" data-aos-duration="700" data-aos-delay="80">
+            Наши <em>кейсы</em>
+        </h1>
+        <p class="page-hero-sub" data-aos="fade-up" data-aos-duration="700" data-aos-delay="160">
+            Более 80 завершённых проектов — реальные сайты с измеримыми результатами.<br>
+            Разработка, продвижение, дизайн и техническая поддержка.
+        </p>
+        <div class="page-hero-stats" data-aos="fade-up" data-aos-duration="700" data-aos-delay="240">
+            <div class="stat-pill">
+                <span class="stat-pill-num">80+</span>
+                <span class="stat-pill-label">проектов</span>
+            </div>
+            <div class="stat-pill">
+                <span class="stat-pill-num">7</span>
+                <span class="stat-pill-label">лет опыта</span>
+            </div>
+            <div class="stat-pill">
+                <span class="stat-pill-num">94%</span>
+                <span class="stat-pill-label">повторных заказов</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ====== PORTFOLIO GRID ====== -->
+<section class="section" id="cases">
+    <div class="container">
+
+        <!-- Filter tabs -->
+        <div class="portfolio-filters" data-aos="fade-up">
+            <button class="filter-btn active" data-filter="all">Все проекты</button>
+            <button class="filter-btn" data-filter="web">Разработка</button>
+            <button class="filter-btn" data-filter="seo">SEO</button>
+            <button class="filter-btn" data-filter="design">Дизайн</button>
+            <button class="filter-btn" data-filter="shop">Интернет-магазин</button>
+        </div>
+
+        <!-- Grid -->
+        <div class="portfolio-full-grid">
+
+            <!-- Case 1 -->
+            <a href="portfolio/case-1.html"
+               class="pf-card" data-category="web design"
+               data-aos="zoom-fly-up" data-aos-duration="700" data-aos-delay="0">
+                <div class="pf-card-img">
+                    <img src="../images/portfolio/case-1.jpg" alt="Кейс 1 — корпоративный сайт">
+                    <div class="pf-card-overlay">
+                        <span class="pf-card-cta">Смотреть кейс</span>
+                    </div>
+                </div>
+                <div class="pf-card-body">
+                    <div class="pf-card-tags">
+                        <span class="tag tag-web">Разработка</span>
+                        <span class="tag tag-design">Дизайн</span>
+                    </div>
+                    <div class="pf-card-title">Корпоративный сайт</div>
+                    <div class="pf-card-meta">Полный редизайн и разработка с нуля</div>
+                </div>
+            </a>
+
+            <!-- Case 2 -->
+            <a href="portfolio/case-2.html"
+               class="pf-card" data-category="web seo"
+               data-aos="zoom-fly-up" data-aos-duration="700" data-aos-delay="80">
+                <div class="pf-card-img">
+                    <img src="../images/portfolio/case-2.jpg" alt="Кейс 2 — продвижение">
+                    <div class="pf-card-overlay">
+                        <span class="pf-card-cta">Смотреть кейс</span>
+                    </div>
+                </div>
+                <div class="pf-card-body">
+                    <div class="pf-card-tags">
+                        <span class="tag tag-web">Разработка</span>
+                        <span class="tag tag-seo">SEO</span>
+                    </div>
+                    <div class="pf-card-title">Сайт с SEO-продвижением</div>
+                    <div class="pf-card-meta">+340% трафика за 6 месяцев</div>
+                </div>
+            </a>
+
+            <!-- Case 3 — Psyholoq -->
+            <a href="https://psyholoq.ru/" target="_blank" rel="noopener"
+               class="pf-card" data-category="web design"
+               data-aos="zoom-fly-up" data-aos-duration="700" data-aos-delay="160">
+                <div class="pf-card-img">
+                    <img src="../images/portfolio/case-3.jpg" alt="Psyholoq">
+                    <div class="pf-card-overlay">
+                        <span class="pf-card-cta">Открыть сайт ↗</span>
+                    </div>
+                </div>
+                <div class="pf-card-body">
+                    <div class="pf-card-tags">
+                        <span class="tag tag-web">Разработка</span>
+                        <span class="tag tag-design">Дизайн</span>
+                    </div>
+                    <div class="pf-card-title">Psyholoq</div>
+                    <div class="pf-card-meta">Сайт психолога — личный бренд онлайн</div>
+                </div>
+            </a>
+
+            <!-- Case 4 — Помощь рядом -->
+            <a href="https://pomosh-ryadom.ru/" target="_blank" rel="noopener"
+               class="pf-card" data-category="web seo"
+               data-aos="zoom-fly-up" data-aos-duration="700" data-aos-delay="0">
+                <div class="pf-card-img">
+                    <img src="../images/portfolio/case-4.jpg" alt="Помощь рядом">
+                    <div class="pf-card-overlay">
+                        <span class="pf-card-cta">Открыть сайт ↗</span>
+                    </div>
+                </div>
+                <div class="pf-card-body">
+                    <div class="pf-card-tags">
+                        <span class="tag tag-web">Разработка</span>
+                        <span class="tag tag-seo">SEO</span>
+                    </div>
+                    <div class="pf-card-title">Помощь рядом</div>
+                    <div class="pf-card-meta">Медицинский портал — рост заявок на 220%</div>
+                </div>
+            </a>
+
+            <!-- Case 5 — Marimo -->
+            <a href="https://aigeekgerl.github.io/marimo-site/" target="_blank" rel="noopener"
+               class="pf-card" data-category="web design shop"
+               data-aos="zoom-fly-up" data-aos-duration="700" data-aos-delay="80">
+                <div class="pf-card-img">
+                    <img src="../images/portfolio/case-5.jpg" alt="Marimo">
+                    <div class="pf-card-overlay">
+                        <span class="pf-card-cta">Открыть сайт ↗</span>
+                    </div>
+                </div>
+                <div class="pf-card-body">
+                    <div class="pf-card-tags">
+                        <span class="tag tag-shop">Интернет-магазин</span>
+                        <span class="tag tag-design">Дизайн</span>
+                    </div>
+                    <div class="pf-card-title">Marimo</div>
+                    <div class="pf-card-meta">Магазин японских растений — уникальный UX</div>
+                </div>
+            </a>
+
+            <!-- Case 6 -->
+            <a href="https://aigeekgerl.github.io/-/" target="_blank" rel="noopener"
+               class="pf-card" data-category="web design"
+               data-aos="zoom-fly-up" data-aos-duration="700" data-aos-delay="160">
+                <div class="pf-card-img">
+                    <img src="../images/portfolio/case-6.jpg" alt="Веб-проект">
+                    <div class="pf-card-overlay">
+                        <span class="pf-card-cta">Открыть сайт ↗</span>
+                    </div>
+                </div>
+                <div class="pf-card-body">
+                    <div class="pf-card-tags">
+                        <span class="tag tag-web">Разработка</span>
+                        <span class="tag tag-design">Дизайн</span>
+                    </div>
+                    <div class="pf-card-title">Веб-проект</div>
+                    <div class="pf-card-meta">Лендинг с анимациями и конверсией 8%</div>
+                </div>
+            </a>
+
+            <!-- Case 7 — Moda Per Bambini -->
+            <a href="https://modaperbambini.group/" target="_blank" rel="noopener"
+               class="pf-card" data-category="web shop seo"
+               data-aos="zoom-fly-up" data-aos-duration="700" data-aos-delay="0">
+                <div class="pf-card-img">
+                    <img src="../images/portfolio/case-7.jpg" alt="Moda Per Bambini">
+                    <div class="pf-card-overlay">
+                        <span class="pf-card-cta">Открыть сайт ↗</span>
+                    </div>
+                </div>
+                <div class="pf-card-body">
+                    <div class="pf-card-tags">
+                        <span class="tag tag-shop">Интернет-магазин</span>
+                        <span class="tag tag-seo">SEO</span>
+                    </div>
+                    <div class="pf-card-title">Moda Per Bambini</div>
+                    <div class="pf-card-meta">Брендовый магазин детской одежды</div>
+                </div>
+            </a>
+
+            <!-- Case 8 — Вкус Перекус -->
+            <a href="portfolio/case-8.html"
+               class="pf-card" data-category="web design"
+               data-aos="zoom-fly-up" data-aos-duration="700" data-aos-delay="80">
+                <div class="pf-card-img">
+                    <img src="../images/portfolio/case-8.jpg" alt="Вкус Перекус">
+                    <div class="pf-card-overlay">
+                        <span class="pf-card-cta">Смотреть кейс</span>
+                    </div>
+                </div>
+                <div class="pf-card-body">
+                    <div class="pf-card-tags">
+                        <span class="tag tag-web">Разработка</span>
+                        <span class="tag tag-design">Дизайн</span>
+                    </div>
+                    <div class="pf-card-title">Вкус Перекус</div>
+                    <div class="pf-card-meta">Доставка еды — заказы через сайт выросли х3</div>
+                </div>
+            </a>
+
+            <!-- Case 9 — AETHER JETS -->
+            <a href="https://aigeekgerl.github.io/-AETHER-JETS/" target="_blank" rel="noopener"
+               class="pf-card" data-category="web design"
+               data-aos="zoom-fly-up" data-aos-duration="700" data-aos-delay="160">
+                <div class="pf-card-img">
+                    <img src="../images/portfolio/case-9.jpg" alt="AETHER JETS">
+                    <div class="pf-card-overlay">
+                        <span class="pf-card-cta">Открыть сайт ↗</span>
+                    </div>
+                </div>
+                <div class="pf-card-body">
+                    <div class="pf-card-tags">
+                        <span class="tag tag-web">Разработка</span>
+                        <span class="tag tag-design">Дизайн</span>
+                    </div>
+                    <div class="pf-card-title">AETHER JETS</div>
+                    <div class="pf-card-meta">Премиум-сайт для чартерной авиации</div>
+                </div>
+            </a>
+
+        </div><!-- /portfolio-full-grid -->
+
+    </div>
+</section>
+
+<!-- ====== CTA ====== -->
+<section class="section cta-section" data-aos="fade-up">
+    <div class="container">
+        <div class="cta-inner">
+            <h2 class="title">Хотите такой же результат?</h2>
+            <p class="brief">Расскажите о своей задаче — предложим решение и покажем похожие кейсы.<br>Первая консультация бесплатно.</p>
+            <div class="cta-actions">
+                <a href="#" class="btn btn-lime btn-wide js-callback-open">
+                    Обсудим ваш проект бесплатно
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ====== FOOTER ====== -->
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <div class="footer-brand-logo">
+                    Технологии <span class="logo-accent">для бизнеса</span>
+                </div>
+                <p class="footer-brand-desc">Интернет-агентство — создаём сайты и продвигаем бизнес с 2017 года. Москва и все регионы России.</p>
+                <a href="tel:+74951234567" class="footer-phone">+7 (495) 123-45-67</a>
+                <a href="mailto:info@technobiz.ru" class="footer-email">info@technobiz.ru</a>
+            </div>
+            <div>
+                <div class="footer-col-title">Услуги</div>
+                <div class="footer-links">
+                    <a href="services.html#design">Проектирование</a>
+                    <a href="services.html#development">Создание сайтов</a>
+                    <a href="services.html#seo">SEO-продвижение</a>
+                    <a href="services.html#support">Техподдержка</a>
+                </div>
+            </div>
+            <div>
+                <div class="footer-col-title">Компания</div>
+                <div class="footer-links">
+                    <a href="about.html">О нас</a>
+                    <a href="portfolio.html">Кейсы</a>
+                    <a href="blog.html">Блог</a>
+                    <a href="contacts.html">Контакты</a>
+                </div>
+            </div>
+            <div>
+                <div class="footer-col-title">Адрес</div>
+                <div class="footer-links">
+                    <span style="color:rgba(255,255,255,0.4);font-size:.87rem;line-height:1.85;">г. Москва,<br>ул. Тверская, д. 15, офис 301</span>
+                    <a href="contacts.html" style="margin-top:10px;color:var(--lime);font-size:.85rem;font-weight:600;">Как нас найти →</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-copy">© 2017–2026, «Технологии для бизнеса»</div>
+            <div class="footer-social">
+                <a href="#" aria-label="ВКонтакте">ВК</a>
+                <a href="#" aria-label="Telegram">TG</a>
+                <a href="#" aria-label="YouTube">YT</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- ====== SCROLL UP ====== -->
+<a href="#" class="scroll-up" id="scrollUp" aria-label="Наверх">
+    <div class="scroll-up-btn">
+        <svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+    </div>
+    <span class="scroll-up-label">Наверх</span>
+</a>
+
+<!-- ====== MODAL: CALLBACK ====== -->
+<div class="modal-overlay" id="callbackModal">
+    <div class="modal">
+        <button class="modal-close js-callback-close">✕</button>
+        <h2 class="modal-title">Задать вопрос</h2>
+        <p class="modal-subtitle">Напишите вопрос по нашей услуге или вашей задаче — свяжемся в течение 30 минут.</p>
+        <form id="callbackForm">
+            <div class="form-group"><input type="text" class="form-input" name="name" placeholder="Имя" required></div>
+            <div class="form-group"><input type="tel" class="form-input" name="phone" placeholder="Телефон" required></div>
+            <div class="form-group"><input type="email" class="form-input" name="email" placeholder="E-mail"></div>
+            <div class="form-group"><textarea class="form-input" name="message" placeholder="Сообщение" rows="4"></textarea></div>
+            <p class="form-note">* Отправляя форму, вы соглашаетесь на обработку <a href="#">персональных данных</a></p>
+            <button type="submit" class="btn btn-gradient" style="width:100%;justify-content:center;padding:18px;">Отправить</button>
+        </form>
+    </div>
+</div>
+
+<!-- ====== MODAL: MENU (мобильный) ====== -->
+<div class="modal-menu-overlay" id="menuModal">
+    <button class="menu-close js-menu-close">✕ Закрыть</button>
+    <div class="menu-logo">Технологии <em>для бизнеса</em></div>
+    <nav class="nav-links">
+        <a href="../index.html" class="nav-link">Главная</a>
+        <a href="services.html" class="nav-link">Услуги и цены</a>
+        <a href="portfolio.html" class="nav-link active">Кейсы</a>
+        <a href="about.html" class="nav-link">О компании</a>
+        <a href="blog.html" class="nav-link">Блог</a>
+        <a href="contacts.html" class="nav-link">Контакты</a>
+    </nav>
+    <div class="menu-footer">
+        <div class="menu-contact">
+            <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+            <a href="mailto:info@technobiz.ru">info@technobiz.ru</a>
+        </div>
+        <div class="footer-social">
+            <a href="#" aria-label="ВКонтакте">ВК</a>
+            <a href="#" aria-label="Telegram">TG</a>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="../js/app.js"></script>
+<script src="../js/portfolio-filter.js"></script>
+</body>
+</html>
