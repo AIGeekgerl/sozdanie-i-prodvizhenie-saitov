@@ -9,6 +9,8 @@
     --lime: #AACC00;
     --lime-dark: #88A300;
     --lime-light: #C4E800;
+    --violet: #8B2FFF;
+    --violet-light: #A855FF;
     --magenta: #C4007A;
     --magenta-dark: #960060;
 
@@ -282,7 +284,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     font-weight: 800; line-height: 1.12; color: white; margin-bottom: 22px;
     text-shadow: 0 2px 28px rgba(0,0,0,0.35);
 }
-.hero-title em { font-style: normal; color: var(--lime); }
+.hero-title em  { font-style: normal; font-weight: 800; color: var(--lime); }
+.hero-title b   { font-style: normal; font-weight: 800; color: var(--violet-light);
+                  text-shadow: 0 0 40px rgba(168,85,255,0.55); }
 .hero-tagline {
     font-size: clamp(1rem, 2vw, 1.3rem);
     color: rgba(255,255,255,0.78); margin-bottom: 48px;
@@ -360,28 +364,37 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .portfolio-item:hover::after { opacity: 1; }
 
-/* AOS zoom override — более драматичный */
+/* ---- Utility colour classes ---- */
+.text-lime   { color: var(--lime); font-style: normal; }
+.text-violet { color: var(--violet-light); font-style: normal; }
+.text-magenta{ color: var(--magenta); font-style: normal; }
+
+/* AOS zoom override — ОЧЕНЬ драматичный */
 [data-aos="zoom-fly-up"] {
     opacity: 0;
-    transform: translate3d(0, 90px, 0) scale(0.6);
+    transform: translate3d(0, 100px, 0) scale(0.5);
     transition-property: transform, opacity;
 }
 [data-aos="zoom-fly-up"].aos-animate {
     opacity: 1;
     transform: translate3d(0, 0, 0) scale(1);
 }
+
+/* ДАЛЕКО С ЛЕВОЙ СТОРОНЫ + масштаб */
 [data-aos="zoom-fly-left"] {
     opacity: 0;
-    transform: translate3d(-110px, 20px, 0) scale(0.65);
+    transform: translate3d(-420px, 0, 0) scale(0.45);
     transition-property: transform, opacity;
 }
 [data-aos="zoom-fly-left"].aos-animate {
     opacity: 1;
     transform: translate3d(0, 0, 0) scale(1);
 }
+
+/* ДАЛЕКО С ПРАВОЙ СТОРОНЫ + масштаб */
 [data-aos="zoom-fly-right"] {
     opacity: 0;
-    transform: translate3d(110px, 20px, 0) scale(0.65);
+    transform: translate3d(420px, 0, 0) scale(0.45);
     transition-property: transform, opacity;
 }
 [data-aos="zoom-fly-right"].aos-animate {
