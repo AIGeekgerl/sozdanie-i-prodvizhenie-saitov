@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кейс: Корпоративный сайт | Технологии для бизнеса</title>
+    <meta name="description" content="Кейс — разработка корпоративного сайта с нуля: редизайн, UX/UI, запуск за 3 недели.">
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/portfolio.css">
+</head>
+<body>
+
+<!-- ====== HEADER ====== -->
+<header class="header" id="header">
+    <button class="header-menu-btn js-menu-open" aria-label="Меню">
+        <span class="header-menu-btn-icon"><span></span><span></span><span></span></span>
+        <span>Меню</span>
+    </button>
+    <a href="../../index.html" class="header-logo">
+        <span class="logo-main">Технологии </span><span class="logo-accent">для бизнеса</span>
+    </a>
+    <nav class="header-nav">
+        <div class="header-nav-item"><a href="../../index.html" class="header-nav-link">Главная</a></div>
+        <div class="header-nav-item">
+            <span class="header-nav-link">Услуги <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+            <div class="nav-dropdown">
+                <a href="../services.html#design">Проектирование сайтов</a>
+                <a href="../services.html#development">Создание веб-проектов</a>
+                <a href="../services.html#seo">SEO-продвижение</a>
+                <a href="../services.html#support">Техническая поддержка</a>
+            </div>
+        </div>
+        <div class="header-nav-item"><a href="../portfolio.html" class="header-nav-link active">Кейсы</a></div>
+        <div class="header-nav-item"><a href="../about.html" class="header-nav-link">О компании</a></div>
+        <div class="header-nav-item"><a href="../blog.html" class="header-nav-link">Блог</a></div>
+        <div class="header-nav-item"><a href="../contacts.html" class="header-nav-link">Контакты</a></div>
+    </nav>
+    <div class="header-spacer"></div>
+    <a href="tel:+74951234567" class="header-phone">+7 (495) 123-45-67</a>
+    <a href="#" class="btn btn-gradient js-callback-open" style="margin-left:16px;">Задать вопрос</a>
+</header>
+
+<!-- ====== CASE HERO ====== -->
+<section class="case-hero">
+    <div class="container">
+        <div class="breadcrumb" data-aos="fade-up">
+            <a href="../../index.html">Главная</a>
+            <span>/</span>
+            <a href="../portfolio.html">Кейсы</a>
+            <span>/</span>
+            <span>Корпоративный сайт</span>
+        </div>
+        <div class="case-hero-inner">
+            <div class="case-hero-content">
+                <div class="case-hero-tags" data-aos="fade-up" data-aos-delay="0">
+                    <span class="tag tag-web">Разработка</span>
+                    <span class="tag tag-design">Дизайн</span>
+                </div>
+                <h1 class="case-hero-title" data-aos="fade-up" data-aos-delay="80">
+                    Корпоративный сайт<br>под ключ за <em>3 недели</em>
+                </h1>
+                <p class="case-hero-desc" data-aos="fade-up" data-aos-delay="160">
+                    Клиент пришёл с устаревшим сайтом 2014 года и задачей поднять доверие у потенциальных партнёров.
+                    Мы провели аудит, разработали новую структуру, создали современный дизайн и запустили проект точно в срок.
+                </p>
+                <div class="case-results" data-aos="fade-up" data-aos-delay="220">
+                    <div class="case-result-item">
+                        <div class="case-result-num">3×</div>
+                        <div class="case-result-label">рост времени на сайте</div>
+                    </div>
+                    <div class="case-result-item">
+                        <div class="case-result-num">−42%</div>
+                        <div class="case-result-label">показатель отказов</div>
+                    </div>
+                    <div class="case-result-item">
+                        <div class="case-result-num">21</div>
+                        <div class="case-result-label">день до запуска</div>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="280">
+                    <a href="#" class="btn btn-lime js-callback-open">Хочу такой же сайт</a>
+                </div>
+            </div>
+            <div class="case-hero-img" data-aos="zoom-fly-right" data-aos-delay="100">
+                <img src="../../images/portfolio/case-1.jpg" alt="Корпоративный сайт — кейс">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ====== ЗАДАЧА ====== -->
+<section class="case-section section-alt">
+    <div class="container">
+        <h2 class="case-section-title" data-aos="fade-up">Задача</h2>
+        <div data-aos="fade-up" data-aos-delay="80">
+            <p>Клиент — производственная компания с 15-летним опытом рынка — работал с сайтом, который не обновлялся 9 лет. Потенциальные партнёры, попадая на него, уходили без контакта: дизайн не вызывал доверия, структура была запутанной, а мобильная версия отсутствовала.</p>
+            <p>Основные требования:</p>
+            <div class="case-list">
+                <div class="case-list-item">Современный дизайн, соответствующий уровню компании</div>
+                <div class="case-list-item">Понятная навигация: каталог продукции, сертификаты, история, контакты</div>
+                <div class="case-list-item">Полная адаптация под мобильные устройства</div>
+                <div class="case-list-item">Быстрая загрузка — клиенты часто приходят с мобильного на слабом интернете</div>
+                <div class="case-list-item">Запуск не позже чем через 3 недели — предстояла выставка</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ====== РЕШЕНИЕ ====== -->
+<section class="case-section">
+    <div class="container">
+        <h2 class="case-section-title" data-aos="fade-up">Что мы сделали</h2>
+        <div data-aos="fade-up" data-aos-delay="80">
+            <p>Начали с аудита текущего сайта и интервью с отделом продаж: выяснили, что 70% сделок начинаются именно с онлайн-знакомства с компанией. Это определило приоритеты.</p>
+            <div class="case-list">
+                <div class="case-list-item">Создали карту сайта с 12 страницами, расставили акценты на ключевых разделах</div>
+                <div class="case-list-item">Разработали UI-kit на основе фирменного стиля клиента</div>
+                <div class="case-list-item">Написали тексты совместно с маркетологом клиента — с фактами и выгодами</div>
+                <div class="case-list-item">Реализовали адаптивную вёрстку на HTML/CSS/JS, без тяжёлых фреймворков</div>
+                <div class="case-list-item">Подключили форму обратной связи с уведомлениями в Telegram</div>
+                <div class="case-list-item">Оптимизировали все изображения: WebP + lazy load, PageSpeed 94/100</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ====== РЕЗУЛЬТАТ ====== -->
+<section class="case-section section-alt">
+    <div class="container">
+        <h2 class="case-section-title" data-aos="fade-up">Результат</h2>
+        <div data-aos="fade-up" data-aos-delay="80">
+            <p>Сайт запустили за 21 день. На выставке клиент впервые раздавал визитки с работающим, современным сайтом — по его словам, это существенно упростило переговоры. В первый месяц после запуска:</p>
+            <div class="case-list">
+                <div class="case-list-item">Среднее время на сайте выросло с 54 секунд до 2 минут 41 секунды</div>
+                <div class="case-list-item">Показатель отказов снизился с 74% до 32%</div>
+                <div class="case-list-item">12 входящих запросов через форму за первые 30 дней</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ====== НАВИГАЦИЯ ====== -->
+<section class="case-nav container" data-aos="fade-up">
+    <a href="../portfolio.html" class="case-nav-link">
+        <svg viewBox="0 0 24 24"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+        Все кейсы
+    </a>
+    <a href="case-2.html" class="case-nav-link">
+        Следующий кейс
+        <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+</section>
+
+<!-- ====== CTA ====== -->
+<section class="section cta-section" data-aos="fade-up">
+    <div class="container">
+        <div class="cta-inner">
+            <h2 class="title">Нужен корпоративный сайт?</h2>
+            <p class="brief">Расскажите о компании — предложим структуру и дизайн на первой консультации. Бесплатно.</p>
+            <div class="cta-actions">
+                <a href="#" class="btn btn-lime btn-wide js-callback-open">Обсудим ваш проект бесплатно</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ====== FOOTER ====== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <div class="footer-brand-logo">Технологии <span class="logo-accent">для бизнеса</span></div>
+                <p class="footer-brand-desc">Интернет-агентство — создаём сайты и продвигаем бизнес с 2017 года.</p>
+                <a href="tel:+74951234567" class="footer-phone">+7 (495) 123-45-67</a>
+                <a href="mailto:info@technobiz.ru" class="footer-email">info@technobiz.ru</a>
+            </div>
+            <div>
+                <div class="footer-col-title">Услуги</div>
+                <div class="footer-links">
+                    <a href="../services.html#design">Проектирование</a>
+                    <a href="../services.html#development">Создание сайтов</a>
+                    <a href="../services.html#seo">SEO-продвижение</a>
+                    <a href="../services.html#support">Техподдержка</a>
+                </div>
+            </div>
+            <div>
+                <div class="footer-col-title">Компания</div>
+                <div class="footer-links">
+                    <a href="../about.html">О нас</a>
+                    <a href="../portfolio.html">Кейсы</a>
+                    <a href="../blog.html">Блог</a>
+                    <a href="../contacts.html">Контакты</a>
+                </div>
+            </div>
+            <div>
+                <div class="footer-col-title">Адрес</div>
+                <div class="footer-links">
+                    <span style="color:rgba(255,255,255,0.4);font-size:.87rem;line-height:1.85;">г. Москва,<br>ул. Тверская, д. 15, офис 301</span>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-copy">© 2017–2026, «Технологии для бизнеса»</div>
+            <div class="footer-social">
+                <a href="#" aria-label="ВКонтакте">ВК</a>
+                <a href="#" aria-label="Telegram">TG</a>
+                <a href="#" aria-label="YouTube">YT</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<a href="#" class="scroll-up" id="scrollUp" aria-label="Наверх">
+    <div class="scroll-up-btn"><svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg></div>
+    <span class="scroll-up-label">Наверх</span>
+</a>
+
+<div class="modal-overlay" id="callbackModal">
+    <div class="modal">
+        <button class="modal-close js-callback-close">✕</button>
+        <h2 class="modal-title">Задать вопрос</h2>
+        <p class="modal-subtitle">Напишите вопрос — свяжемся в течение 30 минут.</p>
+        <form id="callbackForm">
+            <div class="form-group"><input type="text" class="form-input" name="name" placeholder="Имя" required></div>
+            <div class="form-group"><input type="tel" class="form-input" name="phone" placeholder="Телефон" required></div>
+            <div class="form-group"><input type="email" class="form-input" name="email" placeholder="E-mail"></div>
+            <div class="form-group"><textarea class="form-input" name="message" placeholder="Сообщение" rows="4"></textarea></div>
+            <p class="form-note">* Отправляя форму, вы соглашаетесь на обработку <a href="#">персональных данных</a></p>
+            <button type="submit" class="btn btn-gradient" style="width:100%;justify-content:center;padding:18px;">Отправить</button>
+        </form>
+    </div>
+</div>
+
+<div class="modal-menu-overlay" id="menuModal">
+    <button class="menu-close js-menu-close">✕ Закрыть</button>
+    <div class="menu-logo">Технологии <em>для бизнеса</em></div>
+    <nav class="nav-links">
+        <a href="../../index.html" class="nav-link">Главная</a>
+        <a href="../services.html" class="nav-link">Услуги и цены</a>
+        <a href="../portfolio.html" class="nav-link active">Кейсы</a>
+        <a href="../about.html" class="nav-link">О компании</a>
+        <a href="../blog.html" class="nav-link">Блог</a>
+        <a href="../contacts.html" class="nav-link">Контакты</a>
+    </nav>
+    <div class="menu-footer">
+        <div class="menu-contact">
+            <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+            <a href="mailto:info@technobiz.ru">info@technobiz.ru</a>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="../../js/app.js"></script>
+</body>
+</html>
