@@ -12,15 +12,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/portfolio.css">
 </head>
 <body>
 
 <!-- ====== PRELOADER ====== -->
 <div class="preloader" id="preloader">
+    <video src="images/hero.mp4" autoplay muted loop playsinline class="preloader-video"></video>
+    <div class="preloader-overlay"></div>
     <div class="preloader-inner">
         <div class="preloader-logo">Технологии<br><em>для бизнеса</em></div>
         <div class="preloader-tagline">Придут клиенты — позади будут конкуренты</div>
-        <div class="preloader-bar"><div class="preloader-bar-fill"></div></div>
     </div>
 </div>
 
@@ -48,10 +50,10 @@
                 <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
             </span>
             <div class="nav-dropdown">
-                <a href="pages/services.html#design">Проектирование сайтов</a>
-                <a href="pages/services.html#development">Создание веб-проектов</a>
-                <a href="pages/services.html#seo">SEO-продвижение</a>
-                <a href="pages/services.html#support">Техническая поддержка</a>
+                <a href="pages/services/design.html">Проектирование сайтов</a>
+                <a href="pages/services/development.html">Создание веб-проектов</a>
+                <a href="pages/services/seo.html">SEO-продвижение</a>
+                <a href="pages/services/support.html">Техническая поддержка</a>
             </div>
         </div>
         <div class="header-nav-item">
@@ -99,7 +101,7 @@
     </a>
 </section>
 
-<!-- ====== PORTFOLIO — 3×3 без текста ====== -->
+<!-- ====== PORTFOLIO — 3×3 карточки с описанием ====== -->
 <section class="section" id="section-cases">
     <div class="container">
         <div class="section-heading" data-aos="fade-up">
@@ -110,44 +112,131 @@
             </p>
         </div>
 
-        <div class="portfolio-grid">
-            <a href="pages/portfolio/case-1.html" class="portfolio-item"
+        <div class="portfolio-full-grid">
+
+            <a href="pages/portfolio/case-1.html" class="pf-card"
                data-aos="zoom-fly-left" data-aos-duration="900" data-aos-delay="0">
-                <img src="images/portfolio/case-1.jpg" alt="Кейс 1">
-            </a>
-            <a href="pages/portfolio/case-2.html" class="portfolio-item"
-               data-aos="zoom-fly-right" data-aos-duration="900" data-aos-delay="100">
-                <img src="images/portfolio/case-2.jpg" alt="Кейс 2">
-            </a>
-            <a href="https://psyholoq.ru/" class="portfolio-item" target="_blank" rel="noopener"
-               data-aos="zoom-fly-left" data-aos-duration="900" data-aos-delay="200">
-                <img src="images/portfolio/case-3.jpg" alt="Psyholoq">
+                <div class="pf-card-img">
+                    <img src="images/portfolio/case-1.jpg" alt="Корпоративный сайт">
+                    <div class="pf-card-overlay"><span class="pf-card-cta">Смотреть кейс</span></div>
+                </div>
+                <div class="pf-card-body">
+                    <div class="pf-card-tags"><span class="tag tag-web">Разработка</span><span class="tag tag-design">Дизайн</span></div>
+                    <div class="pf-card-title">Корпоративный сайт</div>
+                    <div class="pf-card-meta">Редизайн с нуля — запуск за 3 недели</div>
+                </div>
             </a>
 
-            <a href="https://pomosh-ryadom.ru/" class="portfolio-item" target="_blank" rel="noopener"
-               data-aos="zoom-fly-right" data-aos-duration="900" data-aos-delay="300">
-                <img src="images/portfolio/case-4.jpg" alt="Помощь рядом">
+            <a href="pages/portfolio/case-2.html" class="pf-card"
+               data-aos="zoom-fly-up" data-aos-duration="900" data-aos-delay="100">
+                <div class="pf-card-img">
+                    <img src="images/portfolio/case-2.jpg" alt="SEO-продвижение">
+                    <div class="pf-card-overlay"><span class="pf-card-cta">Смотреть кейс</span></div>
+                </div>
+                <div class="pf-card-body">
+                    <div class="pf-card-tags"><span class="tag tag-web">Разработка</span><span class="tag tag-seo">SEO</span></div>
+                    <div class="pf-card-title">SEO + разработка</div>
+                    <div class="pf-card-meta">+340% трафика за 6 месяцев</div>
+                </div>
             </a>
-            <a href="https://aigeekgerl.github.io/marimo-site/" class="portfolio-item" target="_blank" rel="noopener"
-               data-aos="zoom-fly-left" data-aos-duration="900" data-aos-delay="400">
-                <img src="images/portfolio/case-5.jpg" alt="Marimo">
+
+            <a href="https://psyholoq.ru/" class="pf-card" target="_blank" rel="noopener"
+               data-aos="zoom-fly-right" data-aos-duration="900" data-aos-delay="200">
+                <div class="pf-card-img">
+                    <img src="images/portfolio/case-3.jpg" alt="Psyholoq">
+                    <div class="pf-card-overlay"><span class="pf-card-cta">Открыть сайт ↗</span></div>
+                </div>
+                <div class="pf-card-body">
+                    <div class="pf-card-tags"><span class="tag tag-web">Разработка</span><span class="tag tag-design">Дизайн</span></div>
+                    <div class="pf-card-title">Psyholoq</div>
+                    <div class="pf-card-meta">Сайт психолога — личный бренд онлайн</div>
+                </div>
             </a>
-            <a href="https://aigeekgerl.github.io/-/" class="portfolio-item" target="_blank" rel="noopener"
+
+            <a href="https://pomosh-ryadom.ru/" class="pf-card" target="_blank" rel="noopener"
+               data-aos="zoom-fly-left" data-aos-duration="900" data-aos-delay="300">
+                <div class="pf-card-img">
+                    <img src="images/portfolio/case-4.jpg" alt="Помощь рядом">
+                    <div class="pf-card-overlay"><span class="pf-card-cta">Открыть сайт ↗</span></div>
+                </div>
+                <div class="pf-card-body">
+                    <div class="pf-card-tags"><span class="tag tag-web">Разработка</span><span class="tag tag-seo">SEO</span></div>
+                    <div class="pf-card-title">Помощь рядом</div>
+                    <div class="pf-card-meta">Некоммерческий проект — психологическая помощь</div>
+                </div>
+            </a>
+
+            <a href="https://aigeekgerl.github.io/marimo-site/" class="pf-card" target="_blank" rel="noopener"
+               data-aos="zoom-fly-up" data-aos-duration="900" data-aos-delay="400">
+                <div class="pf-card-img">
+                    <img src="images/portfolio/case-5.jpg" alt="Marimo">
+                    <div class="pf-card-overlay"><span class="pf-card-cta">Открыть сайт ↗</span></div>
+                </div>
+                <div class="pf-card-body">
+                    <div class="pf-card-tags"><span class="tag tag-shop">Интернет-магазин</span><span class="tag tag-design">Дизайн</span></div>
+                    <div class="pf-card-title">Marimo</div>
+                    <div class="pf-card-meta">Интернет-магазин — уникальный UI</div>
+                </div>
+            </a>
+
+            <a href="https://aigeekgerl.github.io/-/" class="pf-card" target="_blank" rel="noopener"
                data-aos="zoom-fly-right" data-aos-duration="900" data-aos-delay="500">
-                <img src="images/portfolio/case-6.jpg" alt="Веб-проект">
+                <div class="pf-card-img">
+                    <img src="images/portfolio/case-6.jpg" alt="Веб-проект">
+                    <div class="pf-card-overlay"><span class="pf-card-cta">Открыть сайт ↗</span></div>
+                </div>
+                <div class="pf-card-body">
+                    <div class="pf-card-tags"><span class="tag tag-web">Разработка</span><span class="tag tag-design">Дизайн</span></div>
+                    <div class="pf-card-title">Веб-проект</div>
+                    <div class="pf-card-meta">Лендинг с высокой конверсией</div>
+                </div>
             </a>
 
-            <a href="https://modaperbambini.group/" class="portfolio-item" target="_blank" rel="noopener"
+            <a href="https://modaperbambini.group/" class="pf-card" target="_blank" rel="noopener"
                data-aos="zoom-fly-left" data-aos-duration="900" data-aos-delay="600">
-                <img src="images/portfolio/case-7.jpg" alt="Moda Per Bambini">
+                <div class="pf-card-img">
+                    <img src="images/portfolio/case-7.jpg" alt="Moda Per Bambini">
+                    <div class="pf-card-overlay"><span class="pf-card-cta">Открыть сайт ↗</span></div>
+                </div>
+                <div class="pf-card-body">
+                    <div class="pf-card-tags"><span class="tag tag-shop">Интернет-магазин</span><span class="tag tag-web">Разработка</span></div>
+                    <div class="pf-card-title">Moda Per Bambini</div>
+                    <div class="pf-card-meta">Каталог детской одежды — мультиязычный</div>
+                </div>
             </a>
-            <a href="pages/portfolio/case-8.html" class="portfolio-item"
-               data-aos="zoom-fly-right" data-aos-duration="900" data-aos-delay="700">
-                <img src="images/portfolio/case-8.jpg" alt="Вкус Перекус">
+
+            <a href="pages/portfolio/case-8.html" class="pf-card"
+               data-aos="zoom-fly-up" data-aos-duration="900" data-aos-delay="700">
+                <div class="pf-card-img">
+                    <img src="images/portfolio/case-8.jpg" alt="Вкус Перекус">
+                    <div class="pf-card-overlay"><span class="pf-card-cta">Смотреть кейс</span></div>
+                </div>
+                <div class="pf-card-body">
+                    <div class="pf-card-tags"><span class="tag tag-shop">Интернет-магазин</span><span class="tag tag-seo">SEO</span></div>
+                    <div class="pf-card-title">Вкус Перекус</div>
+                    <div class="pf-card-meta">Заказы ×3 — доставка еды онлайн</div>
+                </div>
             </a>
-            <a href="https://aigeekgerl.github.io/-AETHER-JETS/" class="portfolio-item" target="_blank" rel="noopener"
-               data-aos="zoom-fly-left" data-aos-duration="900" data-aos-delay="800">
-                <img src="images/portfolio/case-9.jpg" alt="AETHER JETS">
+
+            <a href="https://aigeekgerl.github.io/-AETHER-JETS/" class="pf-card" target="_blank" rel="noopener"
+               data-aos="zoom-fly-right" data-aos-duration="900" data-aos-delay="800">
+                <div class="pf-card-img">
+                    <img src="images/portfolio/case-9.jpg" alt="AETHER JETS">
+                    <div class="pf-card-overlay"><span class="pf-card-cta">Открыть сайт ↗</span></div>
+                </div>
+                <div class="pf-card-body">
+                    <div class="pf-card-tags"><span class="tag tag-web">Разработка</span><span class="tag tag-design">Дизайн</span></div>
+                    <div class="pf-card-title">AETHER JETS</div>
+                    <div class="pf-card-meta">Авиачартер — премиальный лендинг</div>
+                </div>
+            </a>
+
+        </div>
+
+        <div style="text-align:center;margin-top:44px;" data-aos="fade-up">
+            <a href="pages/portfolio.html" class="btn btn-lime">
+                Смотреть все 80+ кейсов
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="width:18px;height:18px;"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
         </div>
     </div>
@@ -165,49 +254,49 @@
         </div>
         <div class="services-row">
             <div class="service-item" data-aos="zoom-fly-left" data-aos-duration="700" data-aos-delay="0">
-                <a href="pages/services.html#design" class="service-item-img">
+                <a href="pages/services/design.html" class="service-item-img">
                     <img src="images/services/design.jpg" alt="Проектирование">
                 </a>
                 <div class="service-item-body">
                     <div class="service-item-title">Проектирование сайтов и мобильных приложений</div>
                     <div class="service-item-brief">От прототипа до финального дизайна — быстро и чётко</div>
-                    <a href="pages/services.html#design" class="service-item-link">Подробнее
+                    <a href="pages/services/design.html" class="service-item-link">Подробнее
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </a>
                 </div>
             </div>
             <div class="service-item" data-aos="zoom-fly-up" data-aos-duration="700" data-aos-delay="100">
-                <a href="pages/services.html#development" class="service-item-img">
+                <a href="pages/services/development.html" class="service-item-img">
                     <img src="images/services/development.jpg" alt="Создание сайтов">
                 </a>
                 <div class="service-item-body">
                     <div class="service-item-title">Создание индивидуальных веб-проектов</div>
                     <div class="service-item-brief">Нестандартные решения и стартапы без шаблонов</div>
-                    <a href="pages/services.html#development" class="service-item-link">Подробнее
+                    <a href="pages/services/development.html" class="service-item-link">Подробнее
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </a>
                 </div>
             </div>
             <div class="service-item" data-aos="zoom-fly-up" data-aos-duration="700" data-aos-delay="200">
-                <a href="pages/services.html#seo" class="service-item-img">
+                <a href="pages/services/seo.html" class="service-item-img">
                     <img src="images/services/seo.jpg" alt="SEO">
                 </a>
                 <div class="service-item-body">
                     <div class="service-item-title">SEO-продвижение сайтов</div>
                     <div class="service-item-brief">Выводим в ТОП Яндекса и Google по целевым запросам</div>
-                    <a href="pages/services.html#seo" class="service-item-link">Подробнее
+                    <a href="pages/services/seo.html" class="service-item-link">Подробнее
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </a>
                 </div>
             </div>
             <div class="service-item" data-aos="zoom-fly-right" data-aos-duration="700" data-aos-delay="300">
-                <a href="pages/services.html#support" class="service-item-img">
+                <a href="pages/services/support.html" class="service-item-img">
                     <img src="images/services/support.jpg" alt="Техподдержка">
                 </a>
                 <div class="service-item-body">
                     <div class="service-item-title">Техническая поддержка и доработка сайтов</div>
                     <div class="service-item-brief">Решаем все вопросы и развиваем ваш сайт без простоев</div>
-                    <a href="pages/services.html#support" class="service-item-link">Подробнее
+                    <a href="pages/services/support.html" class="service-item-link">Подробнее
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </a>
                 </div>
@@ -305,10 +394,10 @@
             <div>
                 <div class="footer-col-title">Услуги</div>
                 <div class="footer-links">
-                    <a href="pages/services.html#design">Проектирование</a>
-                    <a href="pages/services.html#development">Создание сайтов</a>
-                    <a href="pages/services.html#seo">SEO-продвижение</a>
-                    <a href="pages/services.html#support">Техподдержка</a>
+                    <a href="pages/services/design.html">Проектирование</a>
+                    <a href="pages/services/development.html">Создание сайтов</a>
+                    <a href="pages/services/seo.html">SEO-продвижение</a>
+                    <a href="pages/services/support.html">Техподдержка</a>
                 </div>
             </div>
             <div>
@@ -329,7 +418,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <div class="footer-copy">© 2017–2026, «Технологии для бизнеса»</div>
+            <div class="footer-copy">© 2017–2026, «Технологии для бизнеса» · <a href="pages/privacy.html" style="color:rgba(255,255,255,0.4);text-decoration:underline;">Политика конфиденциальности</a></div>
             <div class="footer-social">
                 <a href="#" aria-label="ВКонтакте">ВК</a>
                 <a href="#" aria-label="Telegram">TG</a>
@@ -370,7 +459,7 @@
     <div class="menu-logo">Технологии <em>для бизнеса</em></div>
     <nav class="nav-links">
         <a href="index.html" class="nav-link active">Главная</a>
-        <a href="pages/services.html" class="nav-link">Услуги и цены</a>
+        <a href="pages/services/design.html" class="nav-link">Услуги и цены</a>
         <a href="pages/portfolio.html" class="nav-link">Кейсы</a>
         <a href="pages/about.html" class="nav-link">О компании</a>
         <a href="pages/blog.html" class="nav-link">Блог</a>

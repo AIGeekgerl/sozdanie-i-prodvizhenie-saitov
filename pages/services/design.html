@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проектирование и дизайн сайтов | Технологии для бизнеса</title>
+    <meta name="description" content="Прототипируем, проектируем и создаём дизайн сайтов и мобильных приложений. UI/UX-дизайн в Figma, адаптив, анимации — от 25 000 ₽.">
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/portfolio.css">
+</head>
+<body>
+
+<!-- ====== HEADER ====== -->
+<header class="header" id="header">
+    <button class="header-menu-btn js-menu-open" aria-label="Меню">
+        <span class="header-menu-btn-icon"><span></span><span></span><span></span></span>
+        <span>Меню</span>
+    </button>
+    <a href="../../index.html" class="header-logo">
+        <span class="logo-main">Технологии </span><span class="logo-accent">для бизнеса</span>
+    </a>
+    <nav class="header-nav">
+        <div class="header-nav-item"><a href="../../index.html" class="header-nav-link">Главная</a></div>
+        <div class="header-nav-item">
+            <span class="header-nav-link active">Услуги <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></span>
+            <div class="nav-dropdown">
+                <a href="design.html">Проектирование сайтов</a>
+                <a href="development.html">Создание веб-проектов</a>
+                <a href="seo.html">SEO-продвижение</a>
+                <a href="support.html">Техническая поддержка</a>
+            </div>
+        </div>
+        <div class="header-nav-item"><a href="../portfolio.html" class="header-nav-link">Кейсы</a></div>
+        <div class="header-nav-item"><a href="../about.html" class="header-nav-link">О компании</a></div>
+        <div class="header-nav-item"><a href="../blog.html" class="header-nav-link">Блог</a></div>
+        <div class="header-nav-item"><a href="../contacts.html" class="header-nav-link">Контакты</a></div>
+    </nav>
+    <div class="header-spacer"></div>
+    <a href="tel:+74951234567" class="header-phone">+7 (495) 123-45-67</a>
+    <a href="#" class="btn btn-gradient js-callback-open" style="margin-left:16px;">Задать вопрос</a>
+</header>
+
+<!-- ====== HERO ====== -->
+<section class="inner-hero">
+    <div class="inner-hero-orb inner-hero-orb-1"></div>
+    <div class="inner-hero-orb inner-hero-orb-2"></div>
+    <div class="inner-hero-orb inner-hero-orb-violet"></div>
+
+    <div class="inner-hero-img" style="width:55%;opacity:.72;">
+        <img src="../../images/services/design.jpg" alt="" aria-hidden="true"
+             style="mask-image:linear-gradient(to left, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.5) 60%, transparent 100%);-webkit-mask-image:linear-gradient(to left, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.5) 60%, transparent 100%);"
+             onerror="this.parentElement.style.display='none'">
+    </div>
+
+    <div class="container">
+        <div class="breadcrumb" data-aos="fade-up" data-aos-duration="500">
+            <a href="../../index.html">Главная</a>
+            <span>/</span>
+            <a href="#">Услуги</a>
+            <span>/</span>
+            <span>Проектирование сайтов</span>
+        </div>
+
+        <div class="inner-hero-word js-letter-anim" aria-label="ДИЗАЙН">ДИЗАЙН</div>
+
+        <p class="inner-hero-sub">
+            Прототипируем, проектируем и создаём дизайн сайтов<br>
+            и мобильных приложений — быстро, по-современному, с умом.
+        </p>
+        <div class="inner-hero-actions">
+            <a href="#" class="btn btn-lime js-callback-open">Обсудить проект</a>
+        </div>
+    </div>
+</section>
+
+<!-- ====== ЧТО ВЫ ПОЛУЧАЕТЕ ====== -->
+<section class="section" id="benefits">
+    <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+            <h2 class="title">Что вы получаете</h2>
+            <p class="brief">Дизайн, который не просто нравится — а продаёт, удерживает и конвертирует.</p>
+        </div>
+
+        <div class="svc-benefits">
+
+            <!-- Card 1 -->
+            <div class="svc-benefit-card" data-aos="zoom-fly-left" data-aos-duration="850" data-aos-delay="0">
+                <div class="svc-benefit-icon">
+                    <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Background -->
+                        <rect width="100" height="100" rx="20" fill="rgba(27,79,160,0.18)"/>
+                        <!-- Back screen (white/dim) -->
+                        <rect x="14" y="22" width="52" height="36" rx="4" stroke="rgba(255,255,255,0.4)" stroke-width="2" fill="none"/>
+                        <!-- Middle screen (violet) -->
+                        <rect x="22" y="30" width="46" height="30" rx="4" stroke="#A855FF" stroke-width="2" fill="rgba(168,85,255,0.08)"/>
+                        <!-- Front screen (lime) -->
+                        <rect x="30" y="38" width="40" height="24" rx="4" stroke="#AACC00" stroke-width="2.5" fill="rgba(170,204,0,0.1)"/>
+                        <!-- Layout lines inside front screen -->
+                        <line x1="34" y1="44" x2="48" y2="44" stroke="#AACC00" stroke-width="1.5" stroke-linecap="round"/>
+                        <line x1="34" y1="49" x2="56" y2="49" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" stroke-linecap="round"/>
+                        <line x1="34" y1="54" x2="52" y2="54" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" stroke-linecap="round"/>
+                        <!-- Anchor dot bottom center -->
+                        <circle cx="50" cy="76" r="4" fill="#AACC00"/>
+                        <line x1="50" y1="62" x2="50" y2="72" stroke="#AACC00" stroke-width="1.5"/>
+                    </svg>
+                </div>
+                <h3 class="svc-benefit-title">Прототип и архитектура</h3>
+                <p class="svc-benefit-text">Начинаем с карты структуры и прототипа — так вы видите логику сайта ещё до написания кода и принимаете осознанные решения.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="svc-benefit-card" data-aos="zoom-fly-up" data-aos-duration="850" data-aos-delay="120">
+                <div class="svc-benefit-icon">
+                    <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Background -->
+                        <rect width="100" height="100" rx="20" fill="rgba(139,47,255,0.15)"/>
+                        <!-- Palette circle -->
+                        <circle cx="44" cy="46" r="24" stroke="#A855FF" stroke-width="3" fill="rgba(168,85,255,0.08)"/>
+                        <!-- Thumb hole -->
+                        <circle cx="44" cy="56" r="4" fill="rgba(20,32,58,0.7)" stroke="#A855FF" stroke-width="1.5"/>
+                        <!-- Color dots on palette -->
+                        <circle cx="36" cy="36" r="5" fill="#AACC00"/>
+                        <circle cx="52" cy="34" r="5" fill="#C4007A"/>
+                        <circle cx="58" cy="48" r="5" fill="#4076C8"/>
+                        <circle cx="30" cy="50" r="5" fill="white"/>
+                        <!-- Paintbrush -->
+                        <line x1="64" y1="30" x2="74" y2="20" stroke="#AACC00" stroke-width="2.5" stroke-linecap="round"/>
+                        <path d="M64 30 C60 34 58 38 62 40 C66 42 68 38 64 30Z" fill="#AACC00"/>
+                        <line x1="62" y1="40" x2="59" y2="45" stroke="#AACC00" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3 class="svc-benefit-title">Современный UI/UX дизайн</h3>
+                <p class="svc-benefit-text">Создаём уникальный дизайн в вашем фирменном стиле. Современные UI-решения, которые вызывают доверие и побуждают к действию.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="svc-benefit-card" data-aos="zoom-fly-right" data-aos-duration="850" data-aos-delay="240">
+                <div class="svc-benefit-icon">
+                    <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Background -->
+                        <rect width="100" height="100" rx="20" fill="rgba(196,0,122,0.12)"/>
+                        <!-- Desktop monitor -->
+                        <rect x="10" y="28" width="52" height="36" rx="3" stroke="rgba(255,255,255,0.4)" stroke-width="2" fill="none"/>
+                        <!-- Monitor screen area -->
+                        <rect x="14" y="32" width="44" height="26" rx="1" fill="rgba(255,255,255,0.06)"/>
+                        <!-- Monitor stand -->
+                        <line x1="36" y1="64" x2="36" y2="72" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+                        <line x1="28" y1="72" x2="44" y2="72" stroke="rgba(255,255,255,0.3)" stroke-width="2" stroke-linecap="round"/>
+                        <!-- Mobile phone -->
+                        <rect x="70" y="24" width="20" height="36" rx="4" stroke="#AACC00" stroke-width="2.5" fill="rgba(170,204,0,0.06)"/>
+                        <!-- Phone screen -->
+                        <rect x="73" y="28" width="14" height="24" rx="1" fill="rgba(170,204,0,0.08)"/>
+                        <!-- Screen glow lines inside phone -->
+                        <line x1="75" y1="31" x2="85" y2="31" stroke="#A855FF" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+                        <line x1="75" y1="35" x2="83" y2="35" stroke="#A855FF" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+                        <line x1="75" y1="39" x2="85" y2="39" stroke="#A855FF" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+                        <line x1="75" y1="43" x2="81" y2="43" stroke="#A855FF" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+                        <!-- Home indicator -->
+                        <line x1="77" y1="56" x2="83" y2="56" stroke="#AACC00" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3 class="svc-benefit-title">Адаптивность под все устройства</h3>
+                <p class="svc-benefit-text">Макет адаптируется под любой экран — от смартфона до 4K-монитора. Все элементы перестраиваются сами.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ====== КАК МЫ РАБОТАЕМ ====== -->
+<section class="section-alt" id="process">
+    <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+            <h2 class="title">Как мы работаем</h2>
+            <p class="brief">Прозрачный процесс от первого звонка до готовых макетов.</p>
+        </div>
+
+        <div class="process-steps">
+
+            <div class="process-step" data-aos="zoom-fly-left" data-aos-duration="800" data-aos-delay="0">
+                <div class="process-step-num">01</div>
+                <div class="process-step-content">
+                    <div class="process-step-title">Бриф и ТЗ</div>
+                    <div class="process-step-text">Выясняем задачи, аудиторию, конкурентов. Составляем техническое задание — чтобы у всех было единое понимание результата.</div>
+                </div>
+            </div>
+
+            <div class="process-step" data-aos="zoom-fly-right" data-aos-duration="800" data-aos-delay="80">
+                <div class="process-step-num">02</div>
+                <div class="process-step-content">
+                    <div class="process-step-title">Прототип</div>
+                    <div class="process-step-text">Рисуем скелет страниц в Figma. Вы видите логику и структуру сайта ещё до появления цветов и изображений.</div>
+                </div>
+            </div>
+
+            <div class="process-step" data-aos="zoom-fly-left" data-aos-duration="800" data-aos-delay="160">
+                <div class="process-step-num">03</div>
+                <div class="process-step-content">
+                    <div class="process-step-title">Дизайн</div>
+                    <div class="process-step-text">Создаём финальный визуал с анимациями, фирменной палитрой и типографикой. Каждый экран — продуманный сценарий пользователя.</div>
+                </div>
+            </div>
+
+            <div class="process-step" data-aos="zoom-fly-right" data-aos-duration="800" data-aos-delay="240">
+                <div class="process-step-num">04</div>
+                <div class="process-step-content">
+                    <div class="process-step-title">Согласование</div>
+                    <div class="process-step-text">Вносим правки и утверждаем с вами. Количество итераций зафиксировано в договоре — без сюрпризов.</div>
+                </div>
+            </div>
+
+            <div class="process-step" data-aos="zoom-fly-left" data-aos-duration="800" data-aos-delay="320">
+                <div class="process-step-num">05</div>
+                <div class="process-step-content">
+                    <div class="process-step-title">Передача</div>
+                    <div class="process-step-text">Отдаём готовые макеты в Figma плюс гайдлайн по стилю. Всё структурировано — разработчику будет легко работать с файлами.</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ====== ТАРИФЫ ====== -->
+<section class="section" id="pricing">
+    <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+            <h2 class="title">Тарифы</h2>
+            <p class="brief">Фиксированные цены без скрытых доплат. Выберите формат под свою задачу.</p>
+        </div>
+
+        <div class="price-cards" data-aos="zoom-fly-up" data-aos-duration="900">
+
+            <!-- Тариф 1 -->
+            <div class="price-card">
+                <div class="price-card-name">Лендинг</div>
+                <div class="price-card-price">от 25 000 ₽</div>
+                <div class="price-card-duration">7–10 дней</div>
+                <ul class="price-card-features">
+                    <li>
+                        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                        До 5 секций
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                        Адаптивный макет
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                        2 раунда правок
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                        Figma-макет в файле
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                        Фирменные цвета и шрифты
+                    </li>
+                </ul>
+                <a href="#" class="btn btn-outline-white js-callback-open" style="margin-top:auto;">Обсудить</a>
+            </div>
+
+            <!-- Тариф 2 (featured) -->
+            <div class="price-card price-card--featured">
+                <div class="price-card-badge">Популярный</div>
+                <div class="price-card-name">Корпоративный сайт</div>
+                <div class="price-card-price">от 65 000 ₽</div>
+                <div class="price-card-duration">14–21 день</div>
+                <ul class="price-card-features">
+                    <li>
+                        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                        До 15 страниц
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                        UI-kit с компонентами
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                        Анимации и микровзаимодействия
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                        5 раундов правок
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                        Поддержка 1 месяц
+                    </li>
+                </ul>
+                <a href="#" class="btn btn-lime js-callback-open" style="margin-top:auto;">Заказать</a>
+            </div>
+
+            <!-- Тариф 3 -->
+            <div class="price-card">
+                <div class="price-card-name">Веб-приложение / мобильное</div>
+                <div class="price-card-price">от 120 000 ₽</div>
+                <div class="price-card-duration">от 30 дней</div>
+                <ul class="price-card-features">
+                    <li>
+                        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                        Полный UI/UX-аудит
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                        Мобильная версия iOS/Android
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                        Интерактивный прототип
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                        Безлимитные правки в рамках ТЗ
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                        Сдача с гайдлайном по стилю
+                    </li>
+                </ul>
+                <a href="#" class="btn btn-outline-white js-callback-open" style="margin-top:auto;">Обсудить</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ====== СМЕЖНЫЕ УСЛУГИ ====== -->
+<section class="section-alt" id="related">
+    <div class="container">
+        <div class="section-heading" data-aos="fade-up">
+            <h2 class="title">Смежные услуги</h2>
+            <p class="brief">Дизайн — первый шаг. Мы продолжим и после передачи макетов.</p>
+        </div>
+
+        <div class="related-services" data-aos="zoom-fly-up" data-aos-duration="900">
+
+            <!-- Разработка -->
+            <a href="development.html" class="related-card">
+                <div class="related-card-icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <rect width="40" height="40" rx="12" fill="rgba(170,204,0,0.1)"/>
+                        <polyline points="14 15 8 20 14 25" stroke="var(--lime)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                        <polyline points="26 15 32 20 26 25" stroke="var(--lime)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                        <line x1="22" y1="12" x2="18" y2="28" stroke="var(--lime)" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="related-card-body">
+                    <div class="related-card-title">Создание веб-сайтов</div>
+                    <div class="related-card-sub">Разработка по готовому макету</div>
+                </div>
+                <div class="related-card-arrow">
+                    <svg viewBox="0 0 24 24" width="20" height="20"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </div>
+            </a>
+
+            <!-- SEO -->
+            <a href="seo.html" class="related-card">
+                <div class="related-card-icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <rect width="40" height="40" rx="12" fill="rgba(170,204,0,0.1)"/>
+                        <circle cx="18" cy="18" r="8" stroke="var(--lime)" stroke-width="2" fill="none"/>
+                        <path d="M24 24L32 32" stroke="var(--lime)" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M15 18h6M18 15v6" stroke="var(--lime)" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="related-card-body">
+                    <div class="related-card-title">SEO-продвижение</div>
+                    <div class="related-card-sub">Продвижение готового сайта</div>
+                </div>
+                <div class="related-card-arrow">
+                    <svg viewBox="0 0 24 24" width="20" height="20"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </div>
+            </a>
+
+            <!-- Портфолио -->
+            <a href="../portfolio.html" class="related-card">
+                <div class="related-card-icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <rect width="40" height="40" rx="12" fill="rgba(170,204,0,0.1)"/>
+                        <rect x="8" y="12" width="24" height="18" rx="3" stroke="var(--lime)" stroke-width="2" fill="none"/>
+                        <path d="M14 8h12" stroke="var(--lime)" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M14 22l4-4 3 3 4-5 3 4" stroke="var(--lime)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    </svg>
+                </div>
+                <div class="related-card-body">
+                    <div class="related-card-title">Наши работы</div>
+                    <div class="related-card-sub">Смотреть кейсы по дизайну</div>
+                </div>
+                <div class="related-card-arrow">
+                    <svg viewBox="0 0 24 24" width="20" height="20"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<!-- ====== CTA ====== -->
+<section class="section cta-section" data-aos="fade-up">
+    <div class="container">
+        <div class="cta-inner">
+            <h2 class="title">Хотите увидеть макет своего сайта?</h2>
+            <p class="brief">Расскажите о проекте — покажем референсы и предложим концепцию на первой встрече. Бесплатно.</p>
+            <div class="cta-actions">
+                <a href="#" class="btn btn-lime btn-wide js-callback-open">Обсудим дизайн бесплатно</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ====== FOOTER ====== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <div class="footer-brand-logo">Технологии <span class="logo-accent">для бизнеса</span></div>
+                <p class="footer-brand-desc">Интернет-агентство — создаём сайты и продвигаем бизнес с 2017 года. Москва и все регионы России.</p>
+                <a href="tel:+74951234567" class="footer-phone">+7 (495) 123-45-67</a>
+                <a href="mailto:info@technobiz.ru" class="footer-email">info@technobiz.ru</a>
+            </div>
+            <div>
+                <div class="footer-col-title">Услуги</div>
+                <div class="footer-links">
+                    <a href="design.html">Проектирование</a>
+                    <a href="development.html">Создание сайтов</a>
+                    <a href="seo.html">SEO-продвижение</a>
+                    <a href="support.html">Техподдержка</a>
+                </div>
+            </div>
+            <div>
+                <div class="footer-col-title">Компания</div>
+                <div class="footer-links">
+                    <a href="../about.html">О нас</a>
+                    <a href="../portfolio.html">Кейсы</a>
+                    <a href="../blog.html">Блог</a>
+                    <a href="../contacts.html">Контакты</a>
+                </div>
+            </div>
+            <div>
+                <div class="footer-col-title">Адрес</div>
+                <div class="footer-links">
+                    <span style="color:rgba(255,255,255,0.4);font-size:.87rem;line-height:1.85;">г. Москва,<br>ул. Тверская, д. 15, офис 301</span>
+                    <a href="../contacts.html" style="margin-top:10px;color:var(--lime);font-size:.85rem;font-weight:600;">Как нас найти →</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-copy">© 2017–2026, «Технологии для бизнеса» · <a href="../privacy.html" style="color:rgba(255,255,255,0.4);text-decoration:underline;">Политика конфиденциальности</a></div>
+            <div class="footer-social">
+                <a href="#" aria-label="ВКонтакте">ВК</a>
+                <a href="#" aria-label="Telegram">TG</a>
+                <a href="#" aria-label="YouTube">YT</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Scroll up -->
+<a href="#" class="scroll-up" id="scrollUp" aria-label="Наверх">
+    <div class="scroll-up-btn"><svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg></div>
+    <span class="scroll-up-label">Наверх</span>
+</a>
+
+<!-- MODAL CALLBACK -->
+<div class="modal-overlay" id="callbackModal">
+    <div class="modal">
+        <button class="modal-close js-callback-close">✕</button>
+        <h2 class="modal-title">Обсудить проект</h2>
+        <p class="modal-subtitle">Расскажите о задаче — свяжемся в течение 30 минут.</p>
+        <form id="callbackForm">
+            <div class="form-group"><input type="text" class="form-input" name="name" placeholder="Имя" required></div>
+            <div class="form-group"><input type="tel" class="form-input" name="phone" placeholder="Телефон" required></div>
+            <div class="form-group"><input type="email" class="form-input" name="email" placeholder="E-mail"></div>
+            <div class="form-group"><textarea class="form-input" name="message" placeholder="Расскажите о проекте" rows="4"></textarea></div>
+            <p class="form-note">* Отправляя форму, вы соглашаетесь на обработку <a href="#">персональных данных</a></p>
+            <button type="submit" class="btn btn-gradient" style="width:100%;justify-content:center;padding:18px;">Отправить</button>
+        </form>
+    </div>
+</div>
+
+<!-- MODAL MENU -->
+<div class="modal-menu-overlay" id="menuModal">
+    <button class="menu-close js-menu-close">✕ Закрыть</button>
+    <div class="menu-logo">Технологии <em>для бизнеса</em></div>
+    <nav class="nav-links">
+        <a href="../../index.html" class="nav-link">Главная</a>
+        <a href="design.html" class="nav-link active">Услуги и цены</a>
+        <a href="../portfolio.html" class="nav-link">Кейсы</a>
+        <a href="../about.html" class="nav-link">О компании</a>
+        <a href="../blog.html" class="nav-link">Блог</a>
+        <a href="../contacts.html" class="nav-link">Контакты</a>
+    </nav>
+    <div class="menu-footer">
+        <div class="menu-contact">
+            <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+            <a href="mailto:info@technobiz.ru">info@technobiz.ru</a>
+        </div>
+        <div class="footer-social">
+            <a href="#" aria-label="ВКонтакте">ВК</a>
+            <a href="#" aria-label="Telegram">TG</a>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="../../js/app.js"></script>
+<script src="../../js/letter-anim.js"></script>
+</body>
+</html>

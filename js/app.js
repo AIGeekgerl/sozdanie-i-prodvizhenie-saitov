@@ -1,13 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    /* ---- Preloader — задержка 2.8s ---- */
+    /* ---- Preloader — только при прямой загрузке (не кнопка «Назад») ---- */
     const preloader = document.getElementById('preloader');
     if (preloader) {
-        const hide = () => preloader.classList.add('hidden');
-        // Ждём загрузки + минимум 2.8 секунды для эффекта
-        let loaded = false, minPassed = false;
-        window.addEventListener('load', () => { loaded = true; if (minPassed) hide(); });
-        setTimeout(() => { minPassed = true; if (loaded) hide(); else hide(); }, 2800);
+        // Определяем, это переход «назад/вперёд» или прямая загрузка
+        const navEntry = performance.getEntriesByType?.('navigation')?.[0];
+        const isBackForward = navEntry?.type === 'back_forward'
+            || (performance.navigation && performance.navigation.type === 2);
+
+        if (isBackForward) {
+            // При нажатии «Назад» — мгновенно скрыть
+            preloader.classList.add('hidden');
+        } else {
+            const hide = () => preloader.classList.add('hidden');
+            let loaded = false, minPassed = false;
+            window.addEventListener('load', () => { loaded = true; if (minPassed) hide(); });
+            setTimeout(() => { minPassed = true; if (loaded) hide(); else hide(); }, 1800);
+        }
     }
 
     /* ---- AOS — драматичные анимации ---- */

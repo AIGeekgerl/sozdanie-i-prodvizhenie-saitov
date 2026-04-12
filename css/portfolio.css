@@ -682,3 +682,361 @@
 }
 .map-placeholder svg { width: 40px; height: 40px; stroke: rgba(255,255,255,0.18); fill: none; stroke-width: 1.5; }
 
+/* ============================================================
+   SERVICE PAGES — страницы услуг
+   ============================================================ */
+
+/* ---- SVG Icon containers ---- */
+.svc-icon {
+    width: 100px; height: 100px;
+    margin: 0 auto 24px;
+    display: flex; align-items: center; justify-content: center;
+}
+.svc-icon svg { width: 100%; height: 100%; }
+
+/* ---- Benefit 3-col grid ---- */
+.svc-benefits {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-bottom: 0;
+}
+@media (max-width: 860px) { .svc-benefits { grid-template-columns: 1fr 1fr; gap: 24px; } }
+@media (max-width: 540px) { .svc-benefits { grid-template-columns: 1fr; } }
+
+.svc-benefit {
+    text-align: center;
+    padding: 36px 28px 32px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius);
+    transition: border-color 0.3s, transform 0.35s;
+}
+.svc-benefit:hover { border-color: rgba(170,204,0,0.35); transform: translateY(-5px); }
+.svc-benefit-title {
+    font-size: 1.1rem; font-weight: 700; color: white;
+    margin-bottom: 12px; line-height: 1.3;
+}
+.svc-benefit-text {
+    font-size: 0.875rem; color: rgba(255,255,255,0.5);
+    line-height: 1.75;
+}
+
+/* ---- Process steps ---- */
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0;
+    position: relative;
+    margin-bottom: 0;
+}
+@media (max-width: 960px) { .process-steps { grid-template-columns: repeat(3, 1fr); gap: 20px; } }
+@media (max-width: 540px) { .process-steps { grid-template-columns: 1fr 1fr; gap: 16px; } }
+
+/* Connector line between steps */
+.process-steps::before {
+    content: '';
+    position: absolute;
+    top: 28px; left: 10%; right: 10%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--lime), var(--violet-light), var(--magenta));
+    z-index: 0;
+}
+@media (max-width: 960px) { .process-steps::before { display: none; } }
+
+.process-step {
+    display: flex; flex-direction: column; align-items: center;
+    text-align: center; position: relative; z-index: 1;
+    padding: 0 12px;
+}
+.process-step-num {
+    width: 56px; height: 56px; border-radius: 50%;
+    background: var(--bg-dark);
+    border: 3px solid var(--lime);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.1rem; font-weight: 800; color: var(--lime);
+    margin-bottom: 16px; flex-shrink: 0;
+    box-shadow: 0 0 0 6px var(--bg);
+    transition: background 0.3s, color 0.3s;
+}
+.process-step:hover .process-step-num { background: var(--lime); color: var(--bg-dark); }
+.process-step-title {
+    font-size: 0.9rem; font-weight: 700; color: white;
+    margin-bottom: 6px; line-height: 1.3;
+}
+.process-step-text {
+    font-size: 0.78rem; color: rgba(255,255,255,0.38);
+    line-height: 1.6;
+}
+
+/* ---- Price cards ---- */
+.price-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+@media (max-width: 860px) { .price-cards { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 540px) { .price-cards { grid-template-columns: 1fr; } }
+
+.price-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius); padding: 36px 30px;
+    display: flex; flex-direction: column;
+    position: relative; transition: transform 0.3s, box-shadow 0.3s;
+}
+.price-card.featured {
+    border-color: var(--lime);
+    box-shadow: 0 0 0 1px var(--lime), 0 20px 60px rgba(170,204,0,0.2);
+}
+.price-card:hover { transform: translateY(-5px); }
+.price-card-badge {
+    position: absolute; top: -14px; left: 50%; transform: translateX(-50%);
+    background: var(--lime); color: var(--bg-dark);
+    font-size: 0.7rem; font-weight: 800; letter-spacing: 0.1em;
+    text-transform: uppercase; padding: 4px 16px; border-radius: 50px;
+    white-space: nowrap;
+}
+.price-card-name {
+    font-size: 1rem; font-weight: 700; color: white;
+    margin-bottom: 8px;
+}
+.price-card-price {
+    font-size: 2rem; font-weight: 800; color: var(--lime);
+    margin-bottom: 6px; line-height: 1;
+}
+.price-card-price span { font-size: 1rem; color: rgba(255,255,255,0.4); font-weight: 400; }
+.price-card-desc {
+    font-size: 0.8rem; color: rgba(255,255,255,0.35);
+    margin-bottom: 24px; line-height: 1.6;
+}
+.price-card-features {
+    flex: 1; display: flex; flex-direction: column; gap: 10px;
+    margin-bottom: 28px;
+}
+.price-feature {
+    display: flex; align-items: flex-start; gap: 10px;
+    font-size: 0.85rem; color: rgba(255,255,255,0.6); line-height: 1.4;
+}
+.price-feature::before {
+    content: ''; flex-shrink: 0;
+    width: 16px; height: 16px; border-radius: 50%;
+    background: rgba(170,204,0,0.15);
+    border: 1.5px solid var(--lime);
+    margin-top: 2px;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 8l3 3 5-5' stroke='%23AACC00' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 14px;
+}
+
+/* ---- Related services / интерлинковка ---- */
+.related-services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+@media (max-width: 760px) { .related-services { grid-template-columns: 1fr; } }
+
+.related-card {
+    display: flex; align-items: center; gap: 16px;
+    padding: 22px 24px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    transition: border-color 0.3s, transform 0.3s;
+}
+.related-card:hover { border-color: rgba(170,204,0,0.4); transform: translateX(4px); }
+.related-card-icon {
+    width: 44px; height: 44px; flex-shrink: 0;
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    background: rgba(170,204,0,0.1);
+}
+.related-card-icon svg { width: 22px; height: 22px; stroke: var(--lime); fill: none; stroke-width: 2; }
+.related-card-title {
+    font-size: 0.88rem; font-weight: 700; color: white;
+    line-height: 1.3; margin-bottom: 2px;
+}
+.related-card-sub {
+    font-size: 0.76rem; color: rgba(255,255,255,0.38);
+}
+.related-card-arrow {
+    margin-left: auto; flex-shrink: 0;
+    color: var(--lime); opacity: 0;
+    transition: opacity 0.2s, transform 0.2s;
+}
+.related-card:hover .related-card-arrow { opacity: 1; transform: translateX(4px); }
+.related-card-arrow svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 2.5; }
+
+
+/* ============================================================
+   APPROACH SECTION — Наш подход
+   ============================================================ */
+.approach-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-top: 48px;
+}
+@media (max-width: 900px) { .approach-grid { grid-template-columns: 1fr 1fr; gap: 24px; } }
+@media (max-width: 580px) { .approach-grid { grid-template-columns: 1fr; gap: 20px; } }
+
+.approach-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius);
+    padding: 36px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    transition: transform 0.35s ease, border-color 0.3s, box-shadow 0.35s ease;
+}
+.approach-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(170,204,0,0.3);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+
+.approach-icon {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 20px;
+    display: block;
+}
+.approach-icon svg { width: 100%; height: 100%; }
+
+.approach-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.approach-text {
+    color: var(--text-muted);
+    line-height: 1.7;
+    font-size: 0.92rem;
+}
+
+/* ============================================================
+   FAQ SECTION — Часто задаваемые вопросы
+   ============================================================ */
+.faq-list {
+    max-width: 860px;
+    margin: 48px auto 0;
+}
+
+.faq-item {
+    background: var(--bg-card);
+    border: 1px solid var(--border-light);
+    border-radius: 14px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    transition: border-color 0.25s;
+}
+.faq-item:hover { border-color: rgba(255,255,255,0.15); }
+
+.faq-question {
+    padding: 24px 28px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+    transition: color 0.25s;
+    gap: 16px;
+}
+.faq-question::after {
+    content: "+";
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--lime);
+    flex-shrink: 0;
+    line-height: 1;
+    transition: transform 0.35s ease, content 0s;
+}
+
+.faq-item--open .faq-question {
+    color: var(--lime);
+}
+.faq-item--open .faq-question::after {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    padding: 0 28px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding-bottom 0.4s ease;
+    color: var(--text-muted);
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+.faq-item--open .faq-answer {
+    max-height: 400px;
+    padding-bottom: 24px;
+}
+
+/* ---- FAQ icon variant (faq-question-icon div) ---- */
+.faq-question-icon {
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    background: rgba(170,204,0,0.15);
+    color: var(--lime);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.2rem; line-height: 1;
+    flex-shrink: 0;
+    transition: transform 0.3s ease, background 0.3s;
+}
+.faq-item--open .faq-question-icon {
+    transform: rotate(45deg);
+    background: var(--lime);
+    color: var(--bg-dark);
+}
+
+/* ---- Article body ---- */
+.article-body p { margin-bottom: 1.2em; color: rgba(232,240,255,0.9); line-height: 1.8; }
+.article-body h3 { font-size: 1.2rem; font-weight: 700; color: white; margin: 2em 0 0.8em; }
+.article-body ul, .article-body ol { margin: 0 0 1.2em 1.4em; color: rgba(232,240,255,0.9); line-height: 1.8; }
+.article-body li { margin-bottom: 0.5em; }
+
+/* ---- Related articles ---- */
+.related-services { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 32px; }
+.related-card {
+    display: block; background: var(--bg-card); border-radius: 16px;
+    border: 1px solid var(--border); padding: 28px 24px;
+    text-decoration: none; color: white;
+    transition: border-color 0.25s, transform 0.25s;
+}
+.related-card:hover { border-color: var(--lime); transform: translateY(-4px); }
+.related-card-cat { font-size: 0.78rem; font-weight: 600; color: var(--lime); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px; }
+.related-card-title { font-size: 1rem; font-weight: 600; color: white; line-height: 1.45; margin-bottom: 10px; }
+.related-card-arrow { font-size: 0.9rem; color: var(--lime); font-weight: 600; }
+
+/* ---- Tag styles ---- */
+.tag { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; }
+.tag-web { background: rgba(27,79,160,0.3); color: #6fa8e0; }
+.tag-seo { background: rgba(170,204,0,0.15); color: var(--lime); }
+.tag-design { background: rgba(196,0,122,0.2); color: #e870c8; }
+.tag-price { background: rgba(255,165,0,0.15); color: #ffa500; }
+
+/* ---- Case screenshots grid ---- */
+.case-screens { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+@media (max-width: 768px) { .case-screens { grid-template-columns: 1fr; } }
+
+/* ---- Privacy / static article body ---- */
+.privacy-body { max-width: 800px; margin: 0 auto; }
+.privacy-body h2 { font-size: 1.25rem; font-weight: 700; color: white; margin: 2.5em 0 0.8em; border-left: 3px solid var(--lime); padding-left: 14px; }
+.privacy-body p { margin-bottom: 1.2em; color: rgba(232,240,255,0.85); line-height: 1.8; }
+.privacy-body ul { margin: 0 0 1.2em 1.4em; color: rgba(232,240,255,0.85); line-height: 1.8; }
+.privacy-body li { margin-bottom: 0.5em; }
+.privacy-body strong { color: rgba(232,240,255,0.95); }
+
+/* ---- Extra tag colours ---- */
+.tag-shop  { background: rgba(255,140,0,0.2); color: #ffab40; }
+.tag-crm   { background: rgba(139,47,255,0.2); color: #bb88ff; }
+.tag-ux    { background: rgba(0,200,150,0.15); color: #4fd1a8; }

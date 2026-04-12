@@ -1,6 +1,6 @@
 /* ============================================================
-   Letter fly-in animation — буквы вылетают с разных сторон
-   и собираются в надпись
+   Letter fall animation — буквы падают сверху по одной
+   и встают на место
    Применяется к элементам с классом .js-letter-anim
    ============================================================ */
 (function () {
@@ -16,15 +16,15 @@
             span.className = 'letter-char' + (char === ' ' ? ' letter-space' : '');
             span.textContent = char === ' ' ? '\u00A0' : char;
 
-            // Random direction — angle in radians, distance 250–500px
-            const angle = Math.random() * Math.PI * 2;
-            const dist  = 260 + Math.random() * 260;
-            const rot   = Math.random() * 140 - 70; // –70 … +70 deg
+            // Fall from top: slight horizontal jitter, far above, small tilt
+            const lx  = (Math.random() * 60 - 30).toFixed(1);
+            const ly  = -(300 + Math.random() * 260).toFixed(1);
+            const rot = (Math.random() * 50 - 25).toFixed(1);
 
-            span.style.setProperty('--lx', `${(Math.cos(angle) * dist).toFixed(1)}px`);
-            span.style.setProperty('--ly', `${(Math.sin(angle) * dist).toFixed(1)}px`);
-            span.style.setProperty('--lr', `${rot.toFixed(1)}deg`);
-            span.style.animationDelay = `${200 + i * 85}ms`;
+            span.style.setProperty('--lx', `${lx}px`);
+            span.style.setProperty('--ly', `${ly}px`);
+            span.style.setProperty('--lr', `${rot}deg`);
+            span.style.animationDelay = `${80 + i * 75}ms`;
 
             el.appendChild(span);
         });
