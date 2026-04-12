@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     if (menuModal) {
-        menuModal.querySelectorAll('.nav-link').forEach(link => {
+        menuModal.querySelectorAll('.nav-link:not(.nav-link-toggle), .nav-sublink').forEach(link => {
             link.addEventListener('click', () => {
                 menuModal.classList.remove('active');
                 document.body.style.overflow = '';
