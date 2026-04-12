@@ -13,15 +13,14 @@ document.addEventListener('DOMContentLoaded', () => {
             preloader.classList.add('hidden');
         } else {
             const inner = preloader.querySelector('.preloader-inner');
-            // Фаза 1: текст летит в лицо (CSS анимация flyIn ~0.9s)
-            // Фаза 2: через 1100ms текст улетает вверх (flyOut)
-            // Фаза 3: через 1650ms прелоудер скрывается
+            // Sequence: video visible → text flies in (delay 0.5s, takes 0.9s)
+            // → text on screen ~0.5s → fly out at 1.9s → preloader hides at 2.4s
             setTimeout(() => {
                 if (inner) inner.classList.add('fly-out');
-            }, 1100);
+            }, 1900);
             setTimeout(() => {
                 preloader.classList.add('hidden');
-            }, 1650);
+            }, 2400);
         }
     }
 
