@@ -84,7 +84,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .preloader-inner {
     position: relative; z-index: 1;
     text-align: center;
-    animation: preloaderFlyIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    /* Delay 0.5s so video is visible first, then text flies in */
+    animation: preloaderFlyIn 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.5s forwards;
     opacity: 0;
 }
 .preloader-inner.fly-out {
