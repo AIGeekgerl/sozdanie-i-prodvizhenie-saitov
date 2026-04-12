@@ -89,6 +89,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    /* ---- Services submenu toggle in mobile menu ---- */
+    const servicesToggle = document.getElementById('servicesToggle');
+    const servicesSubmenu = document.getElementById('servicesSubmenu');
+    if (servicesToggle && servicesSubmenu) {
+        servicesToggle.addEventListener('click', () => {
+            servicesSubmenu.classList.toggle('open');
+            servicesToggle.classList.toggle('open');
+        });
+    }
+
     /* ---- ESC закрывает модалки ---- */
     document.addEventListener('keydown', e => {
         if (e.key === 'Escape') {
