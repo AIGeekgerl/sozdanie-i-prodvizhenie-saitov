@@ -728,9 +728,37 @@ textarea.form-input { resize: vertical; min-height: 120px; }
     .footer-grid { grid-template-columns: 1fr; gap: 32px; }
     .modal { padding: 36px 28px; }
     .modal-menu-overlay { padding: 80px 24px 36px; }
+
+    /* ---- Hero mobile ---- */
+    .hero { min-height: 100svh; }
+    .hero-video {
+        /* Ensure video fills portrait screen correctly */
+        object-position: center center;
+        height: 100%; width: 100%;
+    }
+    .hero-overlay {
+        background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.55) 100%);
+    }
+    .hero-orb-1 { width: 380px; height: 380px; top: -120px; right: -100px; }
+    .hero-orb-2 { width: 280px; height: 280px; }
+    .hero-orb-3 { display: none; }
+
+    /* ---- Preloader mobile ---- */
+    .preloader-video { object-position: center center; }
+    .preloader-overlay {
+        background: linear-gradient(135deg, rgba(12,21,37,0.82) 0%, rgba(196,0,122,0.55) 100%);
+    }
+    .preloader-logo { letter-spacing: 0.04em; }
 }
 @media (max-width: 540px) {
     .portfolio-grid { grid-template-columns: 1fr; }
     .services-row { grid-template-columns: 1fr; }
     .btn-wide { max-width: 100%; font-size: 1rem; padding: 18px 24px; }
+
+    /* ---- Hero small phone ---- */
+    .hero-content { padding: 0 16px; }
+    .hero-cta .btn { font-size: 0.95rem; padding: 16px 20px; }
+
+    /* ---- Preloader small phone ---- */
+    .preloader-inner { padding: 0 20px; }
 }
