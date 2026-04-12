@@ -1027,3 +1027,16 @@
 /* ---- Case screenshots grid ---- */
 .case-screens { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
 @media (max-width: 768px) { .case-screens { grid-template-columns: 1fr; } }
+
+/* ---- Privacy / static article body ---- */
+.privacy-body { max-width: 800px; margin: 0 auto; }
+.privacy-body h2 { font-size: 1.25rem; font-weight: 700; color: white; margin: 2.5em 0 0.8em; border-left: 3px solid var(--lime); padding-left: 14px; }
+.privacy-body p { margin-bottom: 1.2em; color: rgba(232,240,255,0.85); line-height: 1.8; }
+.privacy-body ul { margin: 0 0 1.2em 1.4em; color: rgba(232,240,255,0.85); line-height: 1.8; }
+.privacy-body li { margin-bottom: 0.5em; }
+.privacy-body strong { color: rgba(232,240,255,0.95); }
+
+/* ---- Extra tag colours ---- */
+.tag-shop  { background: rgba(255,140,0,0.2); color: #ffab40; }
+.tag-crm   { background: rgba(139,47,255,0.2); color: #bb88ff; }
+.tag-ux    { background: rgba(0,200,150,0.15); color: #4fd1a8; }
