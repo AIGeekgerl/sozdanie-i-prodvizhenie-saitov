@@ -724,6 +724,8 @@ textarea.form-input { resize: vertical; min-height: 120px; }
     .container { padding: 0 20px; }
     .header { padding: 0 20px; }
     .header-phone { display: none; }
+    /* Hide "Задать вопрос" btn in header — prevents horizontal overflow on mobile */
+    .header .btn-gradient { display: none; }
     .portfolio-grid { gap: 12px; }
     .benefits-grid { grid-template-columns: 1fr; }
     .footer-grid { grid-template-columns: 1fr; gap: 32px; }
