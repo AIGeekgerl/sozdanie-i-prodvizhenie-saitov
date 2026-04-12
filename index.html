@@ -34,7 +34,9 @@
 
 <!-- ====== PRELOADER ====== -->
 <div class="preloader" id="preloader">
-    <video src="images/hero-cikl.mp4" autoplay muted loop playsinline class="preloader-video"></video>
+    <video autoplay muted loop playsinline class="preloader-video">
+        <source src="images/hero-cikl.mp4" type="video/mp4">
+    </video>
     <div class="preloader-overlay"></div>
     <div class="preloader-inner">
         <div class="preloader-logo">ТЕХНОЛОГИИ<em>ДЛЯ БИЗНЕСА</em></div>
@@ -92,7 +94,9 @@
 
 <!-- ====== HERO ====== -->
 <section class="hero" id="hero">
-    <video src="images/hero-cikl.mp4" loop autoplay muted playsinline class="hero-video"></video>
+    <video loop autoplay muted playsinline class="hero-video">
+        <source src="images/hero-cikl.mp4" type="video/mp4">
+    </video>
     <div class="hero-orb hero-orb-1"></div>
     <div class="hero-orb hero-orb-2"></div>
     <div class="hero-orb hero-orb-3"></div>
@@ -105,7 +109,7 @@
         <p class="hero-tagline">Придут клиенты — <span class="text-violet">позади будут конкуренты</span></p>
         <div class="hero-cta">
             <a href="#" class="btn btn-lime btn-wide js-callback-open">
-                Приведём клиентов в ваш бизнес — обсудим проект
+                <span class="cta-prefix">Приведём клиентов в ваш бизнес — </span>Обсудим проект
             </a>
         </div>
     </div>
