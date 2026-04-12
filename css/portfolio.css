@@ -812,7 +812,25 @@
 }
 .price-card-features {
     flex: 1; display: flex; flex-direction: column; gap: 10px;
-    margin-bottom: 28px;
+    margin-bottom: 28px; list-style: none;
+}
+/* Fix inline-SVG checkmarks that render as black polygons without explicit size */
+.price-card-features li {
+    display: flex; align-items: center; gap: 10px;
+    font-size: 0.85rem; color: rgba(255,255,255,0.65); line-height: 1.4;
+}
+.price-card-features li svg {
+    width: 20px; height: 20px; flex-shrink: 0;
+    fill: none; stroke: var(--lime); stroke-width: 2.5;
+    stroke-linecap: round; stroke-linejoin: round;
+}
+/* Featured card with double-dash class */
+.price-card--featured {
+    border-color: var(--lime);
+    box-shadow: 0 0 0 1px var(--lime), 0 20px 60px rgba(170,204,0,0.2);
+}
+.price-card-duration {
+    font-size: 0.8rem; color: rgba(255,255,255,0.35); margin-bottom: 24px;
 }
 .price-feature {
     display: flex; align-items: flex-start; gap: 10px;
@@ -839,8 +857,8 @@
 @media (max-width: 760px) { .related-services { grid-template-columns: 1fr; } }
 
 .related-card {
-    display: flex; align-items: center; gap: 16px;
-    padding: 22px 24px;
+    display: flex; align-items: center; gap: 20px;
+    padding: 24px 28px;
     background: var(--bg-card);
     border: 1px solid var(--border-light);
     border-radius: var(--radius-sm);
@@ -849,12 +867,12 @@
 }
 .related-card:hover { border-color: rgba(170,204,0,0.4); transform: translateX(4px); }
 .related-card-icon {
-    width: 44px; height: 44px; flex-shrink: 0;
-    border-radius: 10px;
+    width: 72px; height: 72px; flex-shrink: 0;
+    border-radius: 16px;
     display: flex; align-items: center; justify-content: center;
-    background: rgba(170,204,0,0.1);
+    background: rgba(170,204,0,0.08);
 }
-.related-card-icon svg { width: 22px; height: 22px; stroke: var(--lime); fill: none; stroke-width: 2; }
+.related-card-icon svg { width: 56px; height: 56px; }
 .related-card-title {
     font-size: 0.88rem; font-weight: 700; color: white;
     line-height: 1.3; margin-bottom: 2px;
