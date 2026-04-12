@@ -642,6 +642,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .form-group { margin-bottom: 14px; }
 .form-input {
     width: 100%; padding: 17px 20px;
+    box-sizing: border-box;
     background: rgba(255,255,255,0.06);
     border: 1.5px solid rgba(255,255,255,0.1);
     border-radius: var(--radius-sm); color: white;
@@ -726,8 +727,24 @@ textarea.form-input { resize: vertical; min-height: 120px; }
     .portfolio-grid { gap: 12px; }
     .benefits-grid { grid-template-columns: 1fr; }
     .footer-grid { grid-template-columns: 1fr; gap: 32px; }
-    .modal { padding: 36px 28px; }
-    .modal-menu-overlay { padding: 80px 24px 36px; }
+    /* ---- Modal callback form ---- */
+    .modal-overlay { padding: 16px; }
+    .modal { padding: 32px 22px; width: 100%; max-width: 100%; box-sizing: border-box; }
+    .modal-title { font-size: 1.5rem; }
+
+    /* ---- Mobile menu ---- */
+    .modal-menu-overlay {
+        justify-content: flex-start;
+        padding: 80px 24px 40px;
+    }
+    .menu-logo {
+        font-size: 1rem;
+        white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+        max-width: 100%; margin-bottom: 32px;
+    }
+    .nav-link { font-size: clamp(1.5rem, 7vw, 2.2rem); }
+    .nav-submenu { padding-left: 12px; }
+    .nav-sublink { font-size: clamp(0.95rem, 4vw, 1.1rem); }
 
     /* ---- Hero mobile ---- */
     .hero { min-height: 100svh; overflow: hidden; }
