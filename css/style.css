@@ -740,27 +740,30 @@ textarea.form-input { resize: vertical; min-height: 120px; }
         width: 100%; max-width: 100%;
         padding: 0 20px; box-sizing: border-box;
     }
-    .hero-title { font-size: clamp(1.75rem, 7.5vw, 2.8rem); }
+    .hero-title {
+        font-size: clamp(1.6rem, 7vw, 2.6rem);
+        word-break: break-word; overflow-wrap: break-word;
+    }
+    /* Remove forced line break — let text wrap naturally on mobile */
+    .hero-title br { display: none; }
     .hero-tagline { font-size: clamp(0.9rem, 4vw, 1.1rem); white-space: normal; }
+    /* Hide long button prefix — show only "Обсудим проект" */
+    .cta-prefix { display: none; }
     .hero-orb-1 { width: 320px; height: 320px; top: -120px; right: -80px; }
     .hero-orb-2 { width: 240px; height: 240px; }
     .hero-orb-3 { display: none; }
 
-    /* ---- Preloader mobile — must not overflow viewport ---- */
+    /* ---- Preloader mobile ---- */
     .preloader-video { object-position: center center; }
     .preloader-overlay {
         background: linear-gradient(135deg, rgba(12,21,37,0.85) 0%, rgba(196,0,122,0.5) 100%);
     }
-    /* Key fix: constrain width so flex-center stays on-screen */
     .preloader-inner {
         width: 100%; max-width: 100%;
         padding: 0 24px; box-sizing: border-box;
     }
-    .preloader-logo {
-        font-size: clamp(1.6rem, 8.5vw, 2.8rem);
-        letter-spacing: 0.03em;
-    }
-    .preloader-logo em { letter-spacing: 0.06em; }
+    /* Hide text logo on mobile — video alone fills the screen */
+    .preloader-logo { display: none; }
 }
 @media (max-width: 540px) {
     .portfolio-grid { grid-template-columns: 1fr; }
