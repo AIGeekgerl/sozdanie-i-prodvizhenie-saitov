@@ -12,10 +12,16 @@ document.addEventListener('DOMContentLoaded', () => {
             // При нажатии «Назад» — мгновенно скрыть
             preloader.classList.add('hidden');
         } else {
-            const hide = () => preloader.classList.add('hidden');
-            let loaded = false, minPassed = false;
-            window.addEventListener('load', () => { loaded = true; if (minPassed) hide(); });
-            setTimeout(() => { minPassed = true; if (loaded) hide(); else hide(); }, 1800);
+            const inner = preloader.querySelector('.preloader-inner');
+            // Фаза 1: текст летит в лицо (CSS анимация flyIn ~0.9s)
+            // Фаза 2: через 1100ms текст улетает вверх (flyOut)
+            // Фаза 3: через 1650ms прелоудер скрывается
+            setTimeout(() => {
+                if (inner) inner.classList.add('fly-out');
+            }, 1100);
+            setTimeout(() => {
+                preloader.classList.add('hidden');
+            }, 1650);
         }
     }
 
