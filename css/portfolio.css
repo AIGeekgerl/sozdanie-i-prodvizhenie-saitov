@@ -27,7 +27,7 @@
 
 .breadcrumb {
     display: flex; align-items: center; gap: 8px;
-    font-size: 0.82rem; color: rgba(255,255,255,0.4);
+    font-size: 0.82rem; color: rgba(255,255,255,0.78);
     margin-bottom: 24px;
 }
 .breadcrumb a { color: rgba(255,255,255,0.55); transition: color 0.2s; }
@@ -185,7 +185,7 @@
     line-height: 1.3;
 }
 .pf-card-meta {
-    font-size: 0.82rem; color: rgba(255,255,255,0.42);
+    font-size: 0.82rem; color: rgba(255,255,255,0.80);
     line-height: 1.5;
 }
 
@@ -194,7 +194,7 @@
     display: none;
     text-align: center;
     padding: 80px 0;
-    color: rgba(255,255,255,0.35);
+    color: rgba(255,255,255,0.65);
     font-size: 1rem;
     grid-column: 1 / -1;
 }
@@ -257,7 +257,7 @@
     margin-bottom: 4px;
 }
 .case-result-label {
-    font-size: 0.8rem; color: rgba(255,255,255,0.45);
+    font-size: 0.8rem; color: rgba(255,255,255,0.78);
     line-height: 1.4;
 }
 
@@ -507,7 +507,7 @@
 }
 .blog-card:hover .blog-card-title { color: var(--lime); }
 .blog-card-excerpt {
-    font-size: 0.8rem; color: rgba(255,255,255,0.42);
+    font-size: 0.8rem; color: rgba(255,255,255,0.80);
     line-height: 1.65; flex: 1; margin-bottom: 14px;
 }
 .blog-card-meta {
@@ -572,7 +572,7 @@
     line-height: 1; margin-bottom: 6px;
 }
 .about-stat-label {
-    font-size: 0.82rem; color: rgba(255,255,255,0.45); line-height: 1.5;
+    font-size: 0.82rem; color: rgba(255,255,255,0.78); line-height: 1.5;
 }
 
 /* Values grid */
@@ -597,7 +597,7 @@
 }
 .value-icon svg { width: 24px; height: 24px; stroke: var(--lime); fill: none; stroke-width: 2; }
 .value-card-title { font-size: 1rem; font-weight: 700; color: white; margin-bottom: 10px; }
-.value-card-text { font-size: 0.85rem; color: rgba(255,255,255,0.45); line-height: 1.7; }
+.value-card-text { font-size: 0.85rem; color: rgba(255,255,255,0.78); line-height: 1.7; }
 
 /* ============================================================
    CONTACTS — Контакты
@@ -628,7 +628,7 @@
 .contact-icon svg { width: 22px; height: 22px; stroke: var(--lime); fill: none; stroke-width: 2; }
 .contact-item-label {
     font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em;
-    text-transform: uppercase; color: rgba(255,255,255,0.35);
+    text-transform: uppercase; color: rgba(255,255,255,0.65);
     margin-bottom: 4px;
 }
 .contact-item-value {
@@ -666,7 +666,7 @@
     margin-bottom: 6px;
 }
 .contacts-form-sub {
-    font-size: 0.88rem; color: rgba(255,255,255,0.45);
+    font-size: 0.88rem; color: rgba(255,255,255,0.78);
     margin-bottom: 30px; line-height: 1.6;
 }
 
@@ -766,7 +766,7 @@
     margin-bottom: 6px; line-height: 1.3;
 }
 .process-step-text {
-    font-size: 0.78rem; color: rgba(255,255,255,0.38);
+    font-size: 0.78rem; color: rgba(255,255,255,0.72);
     line-height: 1.6;
 }
 
@@ -806,9 +806,9 @@
     font-size: 2rem; font-weight: 800; color: var(--lime);
     margin-bottom: 6px; line-height: 1;
 }
-.price-card-price span { font-size: 1rem; color: rgba(255,255,255,0.4); font-weight: 400; }
+.price-card-price span { font-size: 1rem; color: rgba(255,255,255,0.78); font-weight: 400; }
 .price-card-desc {
-    font-size: 0.8rem; color: rgba(255,255,255,0.35);
+    font-size: 0.8rem; color: rgba(255,255,255,0.65);
     margin-bottom: 24px; line-height: 1.6;
 }
 .price-card-features {
@@ -831,7 +831,7 @@
     box-shadow: 0 0 0 1px var(--lime), 0 20px 60px rgba(170,204,0,0.2);
 }
 .price-card-duration {
-    font-size: 0.8rem; color: rgba(255,255,255,0.35); margin-bottom: 24px;
+    font-size: 0.8rem; color: rgba(255,255,255,0.65); margin-bottom: 24px;
 }
 .price-feature {
     display: flex; align-items: flex-start; gap: 10px;
@@ -879,7 +879,7 @@
     line-height: 1.3; margin-bottom: 2px;
 }
 .related-card-sub {
-    font-size: 0.76rem; color: rgba(255,255,255,0.38);
+    font-size: 0.76rem; color: rgba(255,255,255,0.72);
 }
 .related-card-arrow {
     margin-left: auto; flex-shrink: 0;
@@ -1093,7 +1093,7 @@
 .nav-sublink {
     font-size: clamp(1rem, 4.5vw, 1.25rem);
     font-weight: 600;
-    color: rgba(255,255,255,0.45);
+    color: rgba(255,255,255,0.78);
     text-decoration: none;
     padding: 9px 0;
     transition: color 0.2s;
