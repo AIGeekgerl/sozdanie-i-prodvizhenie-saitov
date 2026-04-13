@@ -20,7 +20,7 @@
     --bg-card: #1E3255;
     --bg-dark: #0C1525;
     --text: #E8F0FF;
-    --text-muted: #7A95C0;
+    --text-muted: rgba(255,255,255,0.72);
     --text-dark: #0D1830;
     --white: #ffffff;
     --border: rgba(255,255,255,0.08);
