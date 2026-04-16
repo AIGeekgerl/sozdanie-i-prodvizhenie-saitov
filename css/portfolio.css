@@ -368,13 +368,18 @@
 
 /* Large animated heading */
 .inner-hero-word {
-    display: flex; flex-wrap: wrap; align-items: baseline;
-    font-size: clamp(4rem, 12vw, 9rem);
-    font-weight: 800; line-height: 1;
+    display: block;
+    font-size: clamp(3rem, 8vw, 7.5rem);
+    font-weight: 800; line-height: 1.05;
     color: var(--lime);
     letter-spacing: -0.02em;
     text-shadow: 0 0 60px rgba(170,204,0,0.4);
     margin-bottom: 18px;
+}
+/* Обёртка слова — предотвращает разрыв внутри слова */
+.letter-word {
+    display: inline-block;
+    white-space: nowrap;
 }
 .inner-hero-sub {
     font-size: clamp(1rem, 2vw, 1.3rem);
@@ -1064,12 +1069,9 @@
    MOBILE ADAPTIVE — inner-hero & nav-submenu
    ========================================= */
 @media (max-width: 768px) {
-    /* Page heading — wrap at word boundaries only, no mid-word breaks */
+    /* Page heading mobile — слова не разрываются */
     .inner-hero-word {
-        font-size: clamp(1.5rem, 6.5vw, 4.5rem);
-        word-break: normal;
-        overflow-wrap: normal;
-        hyphens: none;
+        font-size: clamp(1.6rem, 7vw, 3.5rem);
     }
     .inner-hero-sub { font-size: 0.95rem; }
 }
