@@ -1064,11 +1064,12 @@
    MOBILE ADAPTIVE — inner-hero & nav-submenu
    ========================================= */
 @media (max-width: 768px) {
-    /* Page heading (КОНТАКТЫ, БЛОГ, etc.) — prevent single letter overflow */
+    /* Page heading — wrap at word boundaries only, no mid-word breaks */
     .inner-hero-word {
-        font-size: clamp(2.2rem, 11vw, 4.5rem);
-        word-break: break-word;
-        overflow-wrap: break-word;
+        font-size: clamp(1.5rem, 6.5vw, 4.5rem);
+        word-break: normal;
+        overflow-wrap: normal;
+        hyphens: none;
     }
     .inner-hero-sub { font-size: 0.95rem; }
 }
